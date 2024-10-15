@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/7c79629d-6b94-4a06-bdf1-73ffb5b7d61e)
+
 # delta-diy-mri.github.io
 Website for the project
 
