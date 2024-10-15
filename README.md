@@ -1,8 +1,10 @@
-![image](https://github.com/user-attachments/assets/7c79629d-6b94-4a06-bdf1-73ffb5b7d61e)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8097b392-6293-45f1-9f9c-28c3ca6d7f63">
+</div>
 
-# delta-diy-mri.github.io
-Website for the project
+# DELTA DIY MRI: Practical magnetic resonance imaging for all
 
+**Learning through building and playing**
 This readme is a placeholder until the website is functional.
 
  **Repositories list** 
@@ -18,3 +20,6 @@ This readme is a placeholder until the website is functional.
 10. [Pulse sequence design using Pypulseq](https://github.com/imr-framework/pypulseq)
 11. [Console software - community effort, using Sairam's fork ](https://github.com/sairamgeethanath/console)
 12. Scanner log and outputs
+
+**Acknowledgement**:
+1. Johns Hopkins Provost DELTA award, 2024 
