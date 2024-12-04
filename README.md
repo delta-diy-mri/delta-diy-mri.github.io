@@ -3,6 +3,11 @@
 </div>
 
 # DELTA DIY MRI: Practical magnetic resonance imaging for all
+<div align="justify">
+  Magnetic resonance imaging (MRI) is a life-saving technology that has demonstrated benefits in clinical practice and basic sciences across different diseases and anatomies. However, two-thirds of the world does not have access to MRI 
+[Geethanath and Vaughan, 2019](https://pubmed.ncbi.nlm.nih.gov/30637891/).  Our overarching goal is to overcome the challenge of access to practical MRI for all (‘mri4all’) through open-source hardware and software educational tools using accessible digital platforms like the internet. This project will overcome access limitations and deliver a seminal, cutting-edge curriculum using an online game-based digital platform that allows students to build and play with their own educational MR scanner. In this project, we will produce a DIY MRI package and game-play-based curriculum. We expect students to demonstrate i) a deeper understanding of MRI working principles from practical experience and limitations of real-world implementations, ii) an increased ability to use and contribute open-source software and hardware; and iii) increased enthusiasm and a positive attitude to learn and test STEM concepts related to MRI hardware, software, usage, and applications.
+</div>
+
 
 **Learning through building and playing**
 This readme is a placeholder until the website is functional.
