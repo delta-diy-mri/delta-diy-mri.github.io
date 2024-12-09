@@ -35,5 +35,25 @@ Each repository should list corresponding conference proceeding or journal artic
  1. [Virtual Scanner Tabletop Games](https://github.com/imr-framework/vs-tabletop/tree/delta-diy)
  2. [Virtual Scanner](https://github.com/imr-framework/virtual-scanner/)
 
+
+**Potential student projects**
+
+***Hardware***
+1.  Field mapping robot - Design covers, wiring and a user interface
+2.  Passive shims - explore new geometries and new optimization methods
+3.  RF coils - Bat head coil matching the anatomy of its head
+
+***MR physics***
+1. Pulse sequences - Robust RF frequency finder, refine calibration sequences - RF power, gradient  
+2. Image reconstruction - Multiple k-space filters 
+
+***Software***
+1. Console - automate install and startup 
+2. Interface virtual scanner games with the console using the Pulseq format
+
+***New experiments***
+1. T1 mapping
+2. T2 mapping
+
 **Acknowledgement**:
 1. Johns Hopkins Provost DELTA award, 2024 
