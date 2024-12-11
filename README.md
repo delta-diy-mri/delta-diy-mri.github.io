@@ -36,7 +36,7 @@ Each repository should list corresponding conference proceeding or journal artic
  2. [Virtual Scanner](https://github.com/imr-framework/virtual-scanner/)
 
 
-**Potential student projects**
+## Potential student projects
 
 ***Hardware***
 1.  Field mapping robot - Design covers, wiring and a user interface
