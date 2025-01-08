@@ -23,7 +23,7 @@ Each repository should list corresponding conference proceeding or journal artic
 3.  [Field mapping robot](https://github.com/imr-framework/mapping_robot)
 4.  [Passive shimming including 3D STL file generation](https://github.com/imr-framework/passive_shimming)
 5.  [Amplifiers: Gradient, RF TX and RF RX - 3rd party - Larry Wald/Martinos/MGH](https://tabletop.martinos.org/index.php?title=Main_Page)
-6.  Planar gradient coil design - TBD
+6.  [Planar gradient coil design](https://github.com/imr-framework/planar_gradient_coil_design/tree/main)
 7.  RF coil: design and simulation
 8.  RF coil: construction
 9.  [Spectrometer - 3rd party - FLOCRA; part of console software download](https://github.com/vnegnev)
