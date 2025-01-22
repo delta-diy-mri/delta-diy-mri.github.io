@@ -36,11 +36,11 @@ Each repository should list corresponding conference proceeding or journal artic
  2. [Virtual Scanner](https://github.com/imr-framework/virtual-scanner/)
 
 ## Our first image
-![image](https://github.com/user-attachments/assets/d841afad-ac66-4295-8c8f-cf62b33f1d70)
+<img src="https://github.com/user-attachments/assets/d841afad-ac66-4295-8c8f-cf62b33f1d70" width="200">
 
 ## Potential student projects
 
-***Hardware***
+***Hardware**
 1.  Field mapping robot - Design covers, wiring and a user interface
 2.  Passive shims - explore new geometries and new optimization methods
 3.  RF coils - Bat head coil matching the anatomy of its head
