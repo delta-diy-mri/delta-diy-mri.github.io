@@ -35,8 +35,10 @@ Each repository should list corresponding conference proceeding or journal artic
  1. [Virtual Scanner Tabletop Games](https://github.com/imr-framework/vs-tabletop/tree/delta-diy)
  2. [Virtual Scanner](https://github.com/imr-framework/virtual-scanner/)
 
-## Our first image
-<img src="https://github.com/user-attachments/assets/d841afad-ac66-4295-8c8f-cf62b33f1d70" width="200">
+## Our image ....
+<img src="https://github.com/user-attachments/assets/74e45643-1f8c-4983-9a25-5458d2f17aa5" width="200">
+
+
 
 ## Potential student projects
 
