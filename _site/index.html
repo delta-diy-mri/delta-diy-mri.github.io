@@ -1,114 +1,189 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Example Hacks</title>
+  <title>CreatED 2018</title>
 
-  <meta name="viewport"    content="width=device-width, initial-scale=1">
-  <meta name="description" content="This is a sample hackathon website that you can use by following instructions on GitHub.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="24-hour hardware hackathon in Edinburgh">
 
   <!-- Twitter Handle -->
-  <meta name="twitter:card"        content="summary" />
-  <meta name="twitter:site"        content="@MLHacks" />
-  <meta name="twitter:creator"     content="@MLHacks" />
-  <meta name="twitter:title"       content="Example Hacks | 5-6 August 2022">
-  <meta name="twitter:description" content="This is a sample hackathon website that you can use by following instructions on GitHub.">
-  <meta name="twitter:image" content="https://prime.mlh.io/img/logos/mlh-prime-color.svg">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@CreatEDHack" />
+  <meta name="twitter:creator" content="@CreatEDHack" />
+  <meta name="twitter:title" content="CreatED | 7-8 April 2018">
+  <meta name="twitter:description" content="24-hour hardware hackathon in Edinburgh"> 
+  <meta name="twitter:image" content="https://createdhack.github.io/images/logo.png">
 
   <!-- Open Graph -->
-  <meta property="og:site_name"   content="Example Hacks" />
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="http://localhost:4000/mlh-hackathon-boilerplate" />
-  <meta property="og:title"       content="Example Hacks | 5-6 August 2022" />
-  <meta property="og:description" content="This is a sample hackathon website that you can use by following instructions on GitHub." />
-  <meta property="og:image" content="https://prime.mlh.io/img/logos/mlh-prime-color.svg" />
+  <meta property="og:site_name" content="CreatED 2018" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:title" content="CreatED | 7-8 April 2018" />
+  <meta property="og:description" content="24-hour hardware hackathon in Edinburgh" /> 
+  <meta property="og:image" content="https://createdhack.github.io/images/logo.png" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/mlh-hackathon-boilerplate/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="/mlh-hackathon-boilerplate/css/base.css" />
-  <link rel="stylesheet" type="text/css" href="/mlh-hackathon-boilerplate/css/original.css" />
-  <!-- link rel="icon" href="/img/favicon.ico" -->
+  <!-- <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/base.css" />
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/original.css" />
 
   <!-- Favicon -->
-  <link rel="canonical" href="http://localhost:4000/mlh-hackathon-boilerplate/">
-  <link rel="icon"      href="http://localhost:4000/mlh-hackathon-boilerplate/images/favicon.ico">
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="icon" href="http://localhost:4000/images/favicon.ico">
+
+  <!-- Form.io -->
+  <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+  <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="http://localhost:4000/js/scroll-nav-color-change.js"></script>
+  <script src="http://localhost:4000/js/smooth-scroll.js"></script>
 </head>
 
 
-  <body>
-    
-<a id="mlh-trust-badge"
-   href="https://mlh.io/seasons/eu-2017/events?utm_source=eu-2017&utm_medium=TrustBadge&utm_campaign=eu-2017&utm_content=white"
-   target="_blank">
-    <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg"
-         alt="Major League Hacking 2017 Hackathon Season"
-         style="width:100%">
-</a>
+<body id="bootstrap-overrides" >
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">CreatED</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-
-
-    <section class="hero">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-xs"><a id="localhost-logo" href="http://localhost.mlh.io" class="navbar-right"><img src="images/white_localhost_logo.svg" alt="MLH Localhost Logo"></a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#schedule">SCHEDULE</a></li>
+          <li><a href="#workshops">WORKSHOPS</a></li>
+          <li><a href="#venue">VENUE</a></li>
+          <li><a href="#sponsors">SPONSORS</a></li>
+          <li class="visible-xs"><a id="localhost-logo" href="http://localhost.mlh.io" class="navbar-right"><img src="images/white_localhost_logo.svg" alt="MLH Localhost Logo"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+ <section class="hero">
   <div class="wrapper text-center">
-    <h1 rel="title">Example Hacks</h1>
-    <h2 rel="description">This is a sample hackathon website that you can use by following instructions on GitHub.</h2>
-    <h3 rel="location">5 - 6 August 2022 &mdash; Holmdel, NJ, United States</h3>
-    <hr>
-    <div class="buttons">
-      
+    <img class="logo" src="images/logo.png" alt="CreatED Logo"/>
+    <div class="black-bg">
+      <h1 rel="title">CreatED 2018</h1>
+      <h2 rel="description">24-hour hardware hackathon</h2>
+      <h2 style="font-weight: 600;" rel="location"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;7th & 8th of April</h2>
+      <h2 style="font-weight: 600;" rel="location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>&nbsp;Appleton Tower, The University of Edinburgh</h2>
+      <div class="social-icons">
         
-          <a class="apply" href="https://my.mlh.io/oauth/authorize?client_id=0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee&amp;redirect_uri=https://mlh.github.io/mlh-hackathon-boilerplate/success.html&amp;response_type=token">Apply</a>
+        <a href="https://www.facebook.com/events/328878124288949/">
+          <img src="images/fb_logo.png" alt="Facebook event">
+        </a>
         
-      
+        <a href="https://twitter.com/CreatEDHack">
+          <img src="images/twitter_logo.png" alt="Twitter">
+        </a>
         
-          <a href="mailto:sponsorship@website.com">Sponsor</a>
-        
-      
+      </div>
+      <br />
     </div>
   </div>
-</section>
-
-
-<section class="about">
-  <div class="container">
+  <div id="startchange" class="container about">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
-      <p>Example Hacks is a hackathon hosted at The University of Example. This is your opportunity to describe your event, what to expect, where it is &amp; anything unique to your event. Keep it straightforward, don’t make it too long.</p>
+      <p>CreatED is a 24 hour hardware hackathon coming to Edinburgh this April.<br /> It’ll bring together students for a fun weekend of invention, hacking, and learning.<br /> Brought to you by <a href="http://ears-edi.com/">The University of Edinburgh Embedded and Robotics Society</a>.</p>
 
     </div>
   </div>
+  <div id="signupModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Eventbrite Registration</h4>
+        </div>
+        <div class="modal-body">
+          <div id="eventbrite-widget-container-43719602508"></div>
+          <div class="hidden-until-eb-complete alert alert-info" roler="alert">
+            <p>Would you like to also register a MyMLH account?</p>
+            <p>
+              <a class="alert-link" id="mymlh-button" href="https://my.mlh.io/oauth/authorize?client_id=87fceece377ceb70f339e440591e889e918c1d421bd986ff7b58ca3ea9ee1d30&amp;redirect_uri=https://createdhack.github.io/success&amp;response_type=token">Yes</a> &nbsp;or&nbsp;
+              <a class="alert-link" id="mymlh-button" href="http://localhost:4000/success">No</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="#signupModal" data-toggle="modal">Sign-up</a>
+
+    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+      var exampleCallback = function() {
+        console.log('Order complete!');
+      };
+
+      window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '43719602508',
+        iframeContainerId: 'eventbrite-widget-container-43719602508',
+
+        // Optional
+        iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback // Method called when an order has successfully completed
+      });
+    </script>
+
+    
+    <a href="mailto:cameron@ears-edi.com">Sponsor</a> 
+
+  </div>
 </section>
 
-<section class="info">
+
+<section class="hardwarehack">
   <div class="container">
+    <h1 class="text-center">What makes CreatED special?</h1>
     <div class="items row">
       
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
-            <img src="images/image1.png" />
-            <h1>LEARN.</h1>
-            <p>We can write something nice with a graphic (as above) to make the event more appealing.
-</p>
+            <img class="special-image" src="images/header1.png" alt="Circuitry on a breadboard" />
+            <h1>Hardware</h1>
+            <hr>
+            <h2 class="special-image-desc">We are the only student-run hackathon in the UK with a focus on hardware! Hackers will be producing physical devices, not just software projects.
+</h2>
           </div>
         </div>
       
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
-            <img src="images/image2.png" />
-            <h1>BUILD.</h1>
-            <p>We can write something nice with a graphic (as above) to make the event more appealing.
-</p>
+            <img class="special-image" src="images/header2.png" alt="Mentor assiting workshop attendees" />
+            <h1>Workshops</h1>
+            <hr>
+            <h2 class="special-image-desc">We will also be running an exciting series of workshops in parallel to the main event. The list will be announced soon&trade; and you'll be able to sign up on the day. Watch this space!
+</h2>
           </div>
         </div>
       
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
-            <img src="images/image3.png" />
-            <h1>SHARE.</h1>
-            <p>We can write something nice with a graphic (as above) to make the event more appealing.
-</p>
+            <img class="special-image" src="images/header3.png" alt="Two mentors discussing information on a computer" />
+            <h1>Mentors</h1>
+            <hr>
+            <h2 class="special-image-desc">We have a team of elite mentors available on site. They will be there to guide you all throughout the event whether you are a beginner or a seasoned hacker!
+</h2>
           </div>
         </div>
       
@@ -116,7 +191,7 @@
   </div>
 </section>
 
-<section class="faq">
+<section id="faq" class="faq">
   <div class="container">
     <h1 class="text-center">FAQ</h1>
     <div class="row">
@@ -125,43 +200,85 @@
         <div class="question col-xs-12 col-sm-12">
           <h2>What is a hackathon?</h2>
           <hr>
-          <p>A hackathon is an invention marathon. Students come together to build cool software &amp; hardware hacks over 24-48 hours. It’s <a href="https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl">very beginner friendly</a>.</p>
-
+          <p><p>A hackathon is an invention marathon. Students come together to build cool software &amp; hardware hacks over 24-48 hours. It’s <a href="https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl">very beginner friendly</a>.</p>
+</p>
         </div>
         
         <div class="question col-xs-12 col-sm-12">
           <h2>How much does it cost?</h2>
           <hr>
-          <p>Nothing. Attending a hackathon is free.</p>
-
+          <p><p>Nothing. Attending a hackathon is free.</p>
+</p>
         </div>
         
         <div class="question col-xs-12 col-sm-12">
           <h2>Do I need to be a student to attend?</h2>
           <hr>
-          <p>Yes. Only students who are currently enrolled at a college/university or have graduated within the past 12 months are eligible to attend.</p>
-
+          <p><p>No. Anyone over the age of 18 can attend.</p>
+</p>
+        </div>
+        
+        <div class="question col-xs-12 col-sm-12">
+          <h2>I'm a complete beginner. Can I still come?</h2>
+          <hr>
+          <p><p>Absolutely! We especially encourage people that are new in the field to come along as a hackathon is a great place to get started. <a href="mailto:cameron@ears-edi.com">Drop us a message</a> if you have any concerns.</p>
+</p>
         </div>
         
         <div class="question col-xs-12 col-sm-12">
           <h2>Where is the event?</h2>
           <hr>
-          <p>The event is being hosted at [insert venue location here].</p>
-
+          <p><p>The event is being hosted at <a href="https://www.google.co.uk/maps/place/Appleton+Tower,+The+University+of+Edinburgh/@55.9443771,-3.1891978,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78385c7685d:0x6f9d3da4d39209ee!8m2!3d55.9443771!4d-3.1870091?dcr=0">Appleton Tower, The University of Edinburgh</a>.</p>
+</p>
         </div>
         
         <div class="question col-xs-12 col-sm-12">
-          <h2>What is Major League Hacking?</h2>
+          <h2>What hardware will be available to use?</h2>
           <hr>
-          <p>Major League Hacking is <a href="https://mlh.io">the official student hackathon league</a> in North America &amp; Europe. We work with over 200 Member Events and empower over 70,000 students every year.</p>
-
+          <p><p>You’ll get access to a selection of standard components, microcontrollers and sensors. For more detail, check out our <a href="https://docs.google.com/spreadsheets/d/1eLp_IJti27BO-0y5Q0DZIzqE3m4JAhHwhD6LHUlhDWw/edit#gid=0" title="CreatED available equipment spreadsheet">equipment list</a>. If there is anything specific that you really want to use, you are welcome to bring it along!</p>
+</p>
+        </div>
+        
+        <div class="question col-xs-12 col-sm-12">
+          <h2>How big are the teams?</h2>
+          <hr>
+          <p><p>Teams are no bigger than 4 people.</p>
+</p>
+        </div>
+        
+        <div class="question col-xs-12 col-sm-12">
+          <h2>Do you offer travel reimbursement?</h2>
+          <hr>
+          <p><p>We cannot reimburse you for your travel expenses.</p>
+</p>
         </div>
         
         <div class="question col-xs-12 col-sm-12">
           <h2>Is there a code of conduct?</h2>
           <hr>
-          <p>Yes there is. We enforce it very strongly. You can <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">find it here</a>.</p>
-
+          <p><p>We will be using the MLH code of conduct and will be enforcing it very strongly. You can <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">find it here</a>.</p>
+</p>
+        </div>
+        
+        <div class="question col-xs-12 col-sm-12">
+          <h2>How does judging work?</h2>
+          <hr>
+          <p><p>There will be 3 main winning teams that will be selected by a panel of judges. The judges will score hacks in a number of categories announced at the event. There will also be additional prizes for winners of specific challenges at the event. These challenges will involve meeting certain criteria specific to each one.</p>
+</p>
+        </div>
+        
+        <div class="question col-xs-12 col-sm-12">
+          <h2>Do I have to use hardware in my hack?</h2>
+          <hr>
+          <p><p>Yes, although don’t be scared if you’ve never used hardware before! We’ll have a team of elite mentors on site that will be helping you every step of the way. There will also be introductory workshops for beginners. Your hack will probably also include a software component.</p>
+</p>
+        </div>
+        
+        <div class="question col-xs-12 col-sm-12">
+          <h2>Do I have to come with teammates?</h2>
+          <hr>
+          <p><p>There is a team-forming session at the start of the first day so feel free to come along on your own or with friends.</p>
+</p>
         </div>
         
       </div>
@@ -169,16 +286,545 @@
   </div>
 </section>
 
-    <section class="footer">
-      <div class="container text-center">
-        <h1>Example Hacks</h1>
-        <h3>&copy; 2016 Example Hacks. Template by <a href="https://github.com/nlaz">Niko Lazaris</a>.</h3>
+
+<section id="schedule" class="schedule">
+  <h1 class="text-center">Schedule</h1>
+  <div class="container">
+    <div id="schedSaturday">
+      <div class="row">
+        <div class="col-sm-3">
+          <header>
+            <div>7</div>
+            <div>April</div>
+          </header>
+        </div>
+        <div class="col-sm-9">
+          <table class="table table-hover">
+            <tbody>
+              <tr><th></th><th>Main track</th><th></th><th>Workshops</th></tr>
+                 
+              <tr>
+                
+                <th>
+                  10:00
+                </th>
+                <td>
+                  Start of registration
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  10:30<br />|<br />11:00
+                </th>
+                <td>
+                  Team forming session 1
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  11.00<br />|<br />12:00
+                </th>
+                <td>
+                  Opening ceremony
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  12:00
+                </th>
+                <td>
+                  Start hacking
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  12:01<br />|<br />12:30
+                </th>
+                <td>
+                  Team forming session 2
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  12:00<br />|<br />13:00
+                </th>
+                <td>
+                  Introduction to electronics workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  12.00<br />|<br />13.00
+                </th>
+                <td>
+                  Introduction to MiRo workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  13:00<br />|<br />14:00
+                </th>
+                <td>
+                  Lunch
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  14:00<br />|<br />15:00
+                </th>
+                <td>
+                  Introduction to Microbit workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  15.00<br />|<br />16.00
+                </th>
+                <td>
+                  GitHub workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  15:30<br />|<br />17.00
+                </th>
+                <td>
+                  Line follower workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  17:00<br />|<br />18:00
+                </th>
+                <td>
+                  FPGA workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  18:00<br />|<br />19:00
+                </th>
+                <td>
+                  Dinner
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  19.00<br />|<br />20.00
+                </th>
+                <td>
+                  Introduction to IoT workshop
+                </td>
+                
+              </tr>
+               
+            </tbody>
+          </table>
+        </div>
       </div>
-    </section>
+    </div>
+    <hr />
+    <div id="schedSunday">
+      <div class="row">
+        <div class="col-sm-3">
+          <header>
+            <div>8</div>
+            <div>April</div>
+          </header>
+        </div>
+        <div class="col-sm-9">
+          <table class="table table-hover">
+            <tbody>
+                 
+              <tr>
+                
+                <th>
+                  00:00
+                </th>
+                <td>
+                  Midnight snack
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  08:00<br />|<br />09:00
+                </th>
+                <td>
+                  Breakfast
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  12:00
+                </th>
+                <td>
+                  Submissions due
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  12.00<br />|<br />13.00
+                </th>
+                <td>
+                  Lunch
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  13:30<br />|<br />15:00
+                </th>
+                <td>
+                  Demos
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  15:30<br />|<br />16:30
+                </th>
+                <td>
+                  Closing ceremony
+                </td>
+                
+              </tr>
+               
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="http://localhost:4000/mlh-hackathon-boilerplate/js/jquery-1.11.3.js"></script>
+<section id="workshops" class="workshops">
+  <div class="container">
+    <h1 class="text-center">Workshops</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <h2 class="text-center">Introduction to Electronics</h2>
+              <hr>
+              <p class="workshop-time"><b>Time:</b> 12.00 - 13.00</p>
+              <p class="workshop-level"><b>Level:</b> No prior experience required.</p>
+              <p class="workshop-description"><b>Description: </b>Do you want to learn the basics of building circuits? We will take you over the fundamentals of electronics concepts, explain how components such as resistors or transistors work and finally get you to build some circuits of your own!</p>
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <h2 class="text-center">MiRo</h2>
+              <hr>
+              <p class="workshop-time"><b>Time:</b> 12.00 - 13.00</p>
+              <p class="workshop-level"><b>Level:</b> Knowledge of programming and command line</p>
+              <p class="workshop-description"><b>Description: </b>Are you interested in working on a MiRo project during the hackathon? Come to this workshop which will give an introduction to MiRo, all of his sensors/actuators and explain the basics of how it works. You will learn how to use the simulator to introduce the basics of programming MiRos with ROS, and finally show how to port the programmed behaviours over to the real robot</p>
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <h2 class="text-center">Introduction to micro:bit</h2>
+              <hr>
+              <p class="workshop-time"><b>Time:</b> 14.00 - 15.00</p>
+              <p class="workshop-level"><b>Level:</b> Entry level, no prior experience required. If you have never programmed before it would be very beneficial for you to come.</p>
+              <p class="workshop-description"><b>Description: </b>A workshop aimed at people with no previous programming experience. We will take you from complete basics to explain the fundamental concepts of programming and then show you how to apply them to hardware by making a simple game on a Microbit</p>
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <h2 class="text-center">GitHub workshop</h2>
+              <hr>
+              <p class="workshop-time"><b>Time:</b> 15.00 - 16.00</p>
+              <p class="workshop-level"><b>Level:</b> Entry level, no prior experience required.</p>
+              <p class="workshop-description"><b>Description: </b>During this workshop delivered to you by GitHub you will learn the basics of version control. We will take you from the basics of Git all the way through to showcasing your projects on GitHub.</p>
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <h2 class="text-center">Line Follower</h2>
+              <hr>
+              <p class="workshop-time"><b>Time:</b> 15.30 - 17.00</p>
+              <p class="workshop-level"><b>Level:</b> Basic knowledge of electronics, Arduino and programming programming</p>
+              <p class="workshop-description"><b>Description: </b>Build your own line follower robot using an Arduino. We will take you through the basics of motor control and sensor readings so that you can build your own line following robot and watch it go!</p>
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <h2 class="text-center">Introduction to FPGA</h2>
+              <hr>
+              <p class="workshop-time"><b>Time:</b> 17.00 - 18.00</p>
+              <p class="workshop-level"><b>Level:</b> Knowledge of Python strongly recommended</p>
+              <p class="workshop-description"><b>Description: </b>A beginner's intro to the world of FPGA programming! Come along to learn how to set up a PYNQ FPGA board and test out several simple projects in Jupyter Notebook</p>
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <h2 class="text-center">Introduction to IoT</h2>
+              <hr>
+              <p class="workshop-time"><b>Time:</b> 19.00 - 20.00</p>
+              <p class="workshop-level"><b>Level:</b> Basic knowledge of Python recommended.</p>
+              <p class="workshop-description"><b>Description: </b>During this workshop we will dive into the world of IoT technologies. We will explain how the IoT systems work and take you through creating you own simple IoT application</p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+  </div>
+</section>
 
+<section id="venue" class="venue">
+  <h1 class="text-center">Venue Details</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.288173401278!2d-3.1891977837099557!3d55.94437708060509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c78385c7685d%3A0x6f9d3da4d39209ee!2sAppleton+Tower%2C+The+University+of+Edinburgh!5e0!3m2!1sen!2suk!4v1520004331756"
+    width="100%" height="450" frameborder="0" style="border:0; box-shadow: 0px 0px 50px #cfcfcf;" allowfullscreen></iframe>
+</section>
+
+
+<section id="sponsors" class="sponsors">
+  <div class="container">
+    <div class="items row">
+      <div class="col-xs-12 text-center">
+        <h1>CreatED 2018 is sponsored by</h1>
+        <hr />
+      </div>
+    </div>
+    <div class="items row">
+      
+    </div>
     
+    <div class="items row">
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center tier2">
+        <div class="item">
+          <a href="http://www.accenture.com"><img src="images/accenture_logo.png"  alt="Accenture"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center tier2">
+        <div class="item">
+          <a href="http://www.nordicsemi.com/"><img src="images/nordic_logo.png"  alt="Nordic"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center tier2">
+        <div class="item">
+          <a href="https://github.com"><img src="images/github_logo.png"  alt="GitHub"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center tier2">
+        <div class="item">
+          <a href="http://uk.queryclick.com/en/"><img src="images/queryclick_logo.svg"  alt="QueryClick"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center tier2">
+        <div class="item">
+          <a href="https://www.edinburgh-robotics.org/"><img src="images/ecr_logo.jpg"  alt="ECR"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center tier2">
+        <div class="item">
+          <a href="http://consequentialrobotics.com"><img src="images/consequentialrobotics_logo.png"  alt="Consequential Robotics"/></a>
+        </div>
+      </div>
+      
+    </div>
+    <hr />
+    <div class="items row">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1 text-center">
+        <div class="item">
+          <a href="https://www.codethink.co.uk/"><img src="images/codethink_logo.svg"  alt="Codethink"/></a>
+        </div>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-2 text-center">
+        <div class="item">
+          <a href="https://www.mokanix.io"><img src="images/mokanix_logo_small.png"  alt="mokanix"/></a>
+        </div>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1 text-center">
+        <div class="item">
+          <a href="https://www.fdmgroup.com/"><img src="images/fdm_logo.png"  alt="FDM Group"/></a>
+        </div>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-2 text-center">
+        <div class="item">
+          <a href="https://comp-soc.com/"><img style="padding-top: 20%; margin-bottom: 10%;" src="images/compsoc_logo.png"  alt="Compsoc"/></a>
+        </div>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1 text-center">
+        <div class="item">
+          <a href="https://www.morganstanley.com/"><img style="padding-top: 2%;" src="images/morgain_stanley_logo.svg"  alt="Morgan Stanley"/></a>
+        </div>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-2 text-center">
+        <div class="item">
+          <a href="http://www.sicsa.ac.uk/"><img src="images/sicsa_logo.svg"  alt="SISCA"/></a>
+        </div>
+      </div>
+      
+    </div>
+    <hr />
+    <div class="items row anycont">
+      
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 text-center">
+        <div class="item">
+          <a href="http://www.ed.ac.uk/informatics"><img src="images/InformaticsUni_transparent.gif"  alt="University of Edinburgh School of Informatics"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 text-center">
+        <div class="item">
+          <a href="http://www.xilinx.com"><img src="images/xilinx_logo.png"  alt="Xilinx"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 text-center">
+        <div class="item">
+          <a href="http://mouser.com/"><img src="images/mouser_logo.jpg"  alt="Mouser"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 text-center">
+        <div class="item">
+          <a href="https://www.jetbrains.com/"><img src="images/jetbrains_logo.png"  alt="JetBrains"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 text-center">
+        <div class="item">
+          <a href="http://unity3d.com/"><img src="images/unity_logo.png"  alt="Unity"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 text-center">
+        <div class="item">
+          <a href="http://www.limemicro.com/"><img src="images/lime_logo.png"  alt="Lime Microsystems"/></a>
+        </div>
+      </div>
+      
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 text-center">
+        <div class="item">
+          <a href="https://www.twilio.com"><img src="images/twilio_logo.svg"  alt="Twilio"/></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  <section class="footer">
+    <div class="container text-center">
+      <h1>CreatED 2018</h1>
+      <h3>Background photo is <a href="https://flic.kr/p/qwfAwk">&ldquo;Edinburgh Castle and city&rdquo;</a> by <a href="https://flic.kr/ps/2WkKwL">john mcsporran</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></h3>
+      <h3>&copy; 2018 <a href="http://ears-edi.com/">EaRS</a>. Based on template by <a href="https://github.com/nlaz">Niko Lazaris</a>.</h3>
+    </div>
+  </section>
+
+  <script src="http://localhost:4000/js/jquery-1.11.3.js"></script>
+
+  
   <!-- Google Analytics code -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -186,10 +832,11 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-43729070-14', 'auto');
+    ga('create', 'UA-92880122-2', 'auto');
     ga('send', 'pageview');
 
   </script>
 
-  </body>
+</body>
+
 </html>

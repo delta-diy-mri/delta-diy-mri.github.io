@@ -2,80 +2,97 @@
 * RegistrationHacks Style File
 * http://bit.ly/1ywfhq7
 */
-
 /* Open Sans Google Font */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,700);
-
-
 /* Montserrat Google Font */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 /*
  * Primary Blue: #44D5FF;
  * Dark Blue: #0F2C34;
  * Primary Pink: #FF7FA8;
  */
-
 * {
   font-family: 'Open Sans';
   font-weight: 600;
 }
 
 body {
-  background-color: #F5699C;
+  background-color: #192630;
 }
 
 section {
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
-
 /*
  * Trust Badge
  */
-
 #mlh-trust-badge {
   display: block;
-  max-width: 100px;
+  max-width: 150px;
   min-width: 60px;
   position: fixed;
-  right: 50px;
-  top: 0;
-  width: 10%;
+  right: 200px;
+  top: -10px;
+  width: 18%;
   z-index: 10000;
 }
-
-/* 
+/*
  * Hero Section
  */
-
 .hero {
-  background-color: #F5699C;
-  min-height: 110vh;
+  background-color: #192630;
+  min-height: 100vh;
+  color: #fff;
 }
 
 .hero img {
-  max-width: 400px;
+  max-width: 200px;
 }
-
+/*
 .hero hr {
-  border-top: 15px solid #0F2C34;
+  border-top: 15px solid #B3B6CF;
   margin: 0;
   position: relative;
   top: -14px;
+} */
+.hero .wrapper {
+  padding-top: 16vh;
+  background-image: url("../images/bg-reduced.png");
+  background-attachment: fixed;
+  background-position-x: center;
+}
+@media only screen and (max-width: 900px) {
+  .hero .wrapper {
+    background-size: 200%;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .hero .wrapper {
+    background-size: 250%;
+    background-position-x: 60%;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .hero .wrapper {
+    background-size: 370%;
+    background-position-x: 70%;
+  }
 }
 
-.hero .wrapper {
-  padding-top: 30vh;
+.hero div.black-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 15px solid #B3B6CF;
 }
 
 .hero .wrapper h1 {
-  background: #fff;
-  background: rgba(255, 255, 255, .3);
-  display: inline-block;
+  color: #fff;
+  /* background: rgba(42, 13, 13, 0.83); */
+  display: block;
   font-size: 60px;
-  font-weight: 800;
+  /* font-weight: 800; */
   letter-spacing: -2px;
   padding: 10px 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero .wrapper h2 {
@@ -89,16 +106,64 @@ section {
   padding-bottom: 35px;
 }
 
-.hero .buttons {
-  margin: 40px 0;
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.hero .buttons a {
+.navbar-brand {
+  font-weight: 400;
+}
+
+#bootstrap-overrides .navbar-default .navbar-brand,
+#bootstrap-overrides .navbar-header a,
+#bootstrap-overrides .navbar-nav > li > a {
+  color: #fafafa;
+}
+
+#bootstrap-overrides .navbar-nav > li > a:hover {
+  color: #dadada;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fafafa;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #5a5a5a;
+}
+
+.hidden-until-eb-complete {
+  display: none;
+}
+
+#localhost-logo {
+  margin: 0;
+  padding: 0;
+}
+
+#localhost-logo > img {
+  margin: 10px;
+  height: 30px;
+}
+
+.modal-content {
+  background-color: #f8f8fa;
+}
+
+.buttons {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.buttons a {
   background: #fff;
-  border: 10px solid #0F2C34;
+  border: 10px solid #B3B6CF;
   border-radius: 40px;
   color: #0F2C34;
   display: inline;
+  margin-top: 20px;
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 700;
@@ -107,89 +172,116 @@ section {
   text-transform: uppercase;
 }
 
-.hero .buttons a:hover,
-.hero .buttons a:focus {
-  background-color: #0F2C34;
+.buttons a:focus,
+.buttons a:hover {
+  background-color: #B3B6CF;
   color: #fff;
   transition: all 0.2s ease;
 }
 
-.hero .buttons a:not(:last-child) {
+.buttons a:not(:last-child) {
   margin-right: 10px;
 }
+/* .hero .modal-content {
+  background-color: #0c1318;
+}
 
-/* 
+.hero .modal-header .close {
+  color: #fff;
+  opacity: 1;
+} */
+.modal-title, .modal {
+  color: black;
+}
+
+/*
  * About Section
  */
-
 .about {
   border-width: 15px 0;
-  background-color: #fff;
-  padding: 130px 0;
+  padding-top: 2vh;
   position: relative;
 }
 
+section.about {
+  background-color: #fff;
+  padding: 130px 0;
+}
+
 .about p {
-  color: #0F2C34;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 22px;
-  line-height: 1.6em;
+  line-height: 2.2em;
   letter-spacing: -.3px;
+}
+
+section.about p {
+  color: #0F2C34;
 }
 
 .about p span {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 /*
  * Info Section
  */
-
-.info {
+.info,
+.sponsors,
+.schedule,
+.venue {
   background-color: #fff;
-  margin-top: 15px;
-  padding: 100px 0;
+  /* margin-top: 15px; */
+  padding: 50px 0;
   position: relative;
 }
 
-.info .item {
+.info .item,
+.sponsors .item {
   padding: 20px;
 }
 
-.info .item h1 {
+.info .item h1,
+.sponsors .item h1 {
   font-family: 'Montserrat';
   font-size: 45px;
   font-weight: 700;
   margin: 20px 0;
 }
 
-.info .item img {
-  max-width: 220px;
+.info .item img,
+.sponsors .item img {
+  width: 100%;
 }
 
-.info .item p {
+.info .item p,
+.sponsors .item p {
   font-size: 20px;
 }
-
 /*
  * FAQ Section
  */
-
-.faq {
+.faq, .hardwarehack, .workshops{
   background-color: #fff;
-  margin-top: 15px;
-  padding: 100px 0;
+  /* margin-top: 15px; */
+  padding: 50px 0;
   position: relative;
 }
 
-.faq h1 {
+.faq h1,
+.sponsors h1,
+.venue h1,
+.hardwarehack h1,
+.schedule h1,
+.workshops h1 {
   font-family: 'Montserrat';
   font-weight: 700;
   margin: 30px 0;
 }
 
-.faq .question h2 {
+.faq .question h2,
+.hardwarehack .question h2,
+.workshops h2 {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 24px;
@@ -201,8 +293,18 @@ section {
   width: 80px;
 }
 
-.faq .question p {
+.hardwarehack .item hr {
+  border-top: 8px solid #0F2C34;
+  width: 130px;
+}
+
+.faq .question p,
+.hardwarehack .question p,
+.workshops p,
+.special-image-desc {
+  font-family: 'Montserrat';
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.5em;
 }
 
@@ -211,13 +313,11 @@ section {
   margin-top: 40px;
   width: 300px;
 }
-
 /*
  * Footer Section
  */
-
 .footer {
-  background-color: #F5699C;
+  background-color: #B3B6CF;
   color: #fff;
   padding: 30px 0;
 }
@@ -238,7 +338,6 @@ section {
 .footer h3 a {
   color: #fff;
 }
-
 @media(max-width: 768px) {
   .hero .buttons a {
     border-width: 8px;
@@ -255,4 +354,51 @@ section {
     border-top-width: 8px;
     top: -8px;
   }
+}
+
+.tier2 {
+    padding-bottom: 1vw;
+}
+
+.schedule .table {
+  border-left: #1f1f1f 0.8rem solid;
+}
+
+.table th {
+  text-align: center;
+}
+
+.table td {
+  font-family: Montserrat;
+}
+
+.table tbody tr td {
+  vertical-align: middle;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+.schedule header div {
+    font-family: Montserrat;
+    font-size: 6rem;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+.social-icons img {
+  width: 4rem;
+  padding: 0.3rem;
+  margin-top: 10px;
+}
+
+.special-image {
+  width: 300px;
+  padding: 20px;
+}
+
+.sponsors .anycont img {
+  float:none;
+  text-align: center;
+  padding: 3vw;
 }

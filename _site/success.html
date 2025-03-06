@@ -1,86 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Example Hacks</title>
+  <title>CreatED 2018</title>
 
-  <meta name="viewport"    content="width=device-width, initial-scale=1">
-  <meta name="description" content="This is a sample hackathon website that you can use by following instructions on GitHub.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="24-hour hardware hackathon in Edinburgh">
 
   <!-- Twitter Handle -->
-  <meta name="twitter:card"        content="summary" />
-  <meta name="twitter:site"        content="@MLHacks" />
-  <meta name="twitter:creator"     content="@MLHacks" />
-  <meta name="twitter:title"       content="Example Hacks | 5-6 August 2022">
-  <meta name="twitter:description" content="This is a sample hackathon website that you can use by following instructions on GitHub.">
-  <meta name="twitter:image" content="https://prime.mlh.io/img/logos/mlh-prime-color.svg">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@CreatEDHack" />
+  <meta name="twitter:creator" content="@CreatEDHack" />
+  <meta name="twitter:title" content="CreatED | 7-8 April 2018">
+  <meta name="twitter:description" content="24-hour hardware hackathon in Edinburgh"> 
+  <meta name="twitter:image" content="https://createdhack.github.io/images/logo.png">
 
   <!-- Open Graph -->
-  <meta property="og:site_name"   content="Example Hacks" />
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="http://localhost:4000/mlh-hackathon-boilerplate" />
-  <meta property="og:title"       content="Example Hacks | 5-6 August 2022" />
-  <meta property="og:description" content="This is a sample hackathon website that you can use by following instructions on GitHub." />
-  <meta property="og:image" content="https://prime.mlh.io/img/logos/mlh-prime-color.svg" />
+  <meta property="og:site_name" content="CreatED 2018" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:title" content="CreatED | 7-8 April 2018" />
+  <meta property="og:description" content="24-hour hardware hackathon in Edinburgh" /> 
+  <meta property="og:image" content="https://createdhack.github.io/images/logo.png" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/mlh-hackathon-boilerplate/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="/mlh-hackathon-boilerplate/css/base.css" />
-  <link rel="stylesheet" type="text/css" href="/mlh-hackathon-boilerplate/css/original.css" />
-  <!-- link rel="icon" href="/img/favicon.ico" -->
+  <!-- <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/base.css" />
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/original.css" />
 
   <!-- Favicon -->
-  <link rel="canonical" href="http://localhost:4000/mlh-hackathon-boilerplate/success.html">
-  <link rel="icon"      href="http://localhost:4000/mlh-hackathon-boilerplate/images/favicon.ico">
+  <link rel="canonical" href="http://localhost:4000/success.html">
+  <link rel="icon" href="http://localhost:4000/images/favicon.ico">
+
+  <!-- Form.io -->
+  <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+  <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="http://localhost:4000/js/scroll-nav-color-change.js"></script>
+  <script src="http://localhost:4000/js/smooth-scroll.js"></script>
 </head>
 
 
-  <body>
-    
-<a id="mlh-trust-badge"
-   href="https://mlh.io/seasons/eu-2017/events?utm_source=eu-2017&utm_medium=TrustBadge&utm_campaign=eu-2017&utm_content=white"
-   target="_blank">
-    <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg"
-         alt="Major League Hacking 2017 Hackathon Season"
-         style="width:100%">
-</a>
+<body id="bootstrap-overrides" >
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">CreatED</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-
-
-    <section class="about">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-xs"><a id="localhost-logo" href="http://localhost.mlh.io" class="navbar-right"><img src="images/white_localhost_logo.svg" alt="MLH Localhost Logo"></a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#schedule">SCHEDULE</a></li>
+          <li><a href="#workshops">WORKSHOPS</a></li>
+          <li><a href="#venue">VENUE</a></li>
+          <li><a href="#sponsors">SPONSORS</a></li>
+          <li class="visible-xs"><a id="localhost-logo" href="http://localhost.mlh.io" class="navbar-right"><img src="images/white_localhost_logo.svg" alt="MLH Localhost Logo"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+ <section class="about">
   <div class="container text-center">
-    <h1>You'll receive more information closer to the hackathon.
+    <h1><p>Thanks for signing up! <br /> You’ll receive more information closer to the hackathon.</p>
 </h1>
-    
+
     <br />
     <hr />
     <br />
 
-    <p>By signing up for Example Hacks you agree to abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Major League Hacking Code of Conduct</a>.</p>
+    <p>By signing up for CreatED 2018 you agree to abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Major League Hacking Code of Conduct</a>.</p>
     <br />
 
-    <p>We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, pre and post-event informational e-mails, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.</p>
+    <p>We participate in Major League Hacking (MLH) as a MLH Localhost Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, pre and post-event informational e-mails, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.</p>
 
     <br />
-    <p><a href="http://localhost:4000/mlh-hackathon-boilerplate/">&rarr; Go back to homepage</a></p>
+    <p><a href="http://localhost:4000/">&rarr; Go back to homepage</a></p>
   </div>
 </section>
 
 
-    <section class="footer">
-      <div class="container text-center">
-        <h1>Example Hacks</h1>
-        <h3>&copy; 2016 Example Hacks. Template by <a href="https://github.com/nlaz">Niko Lazaris</a>.</h3>
-      </div>
-    </section>
+  <section class="footer">
+    <div class="container text-center">
+      <h1>CreatED 2018</h1>
+      <h3>Background photo is <a href="https://flic.kr/p/qwfAwk">&ldquo;Edinburgh Castle and city&rdquo;</a> by <a href="https://flic.kr/ps/2WkKwL">john mcsporran</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></h3>
+      <h3>&copy; 2018 <a href="http://ears-edi.com/">EaRS</a>. Based on template by <a href="https://github.com/nlaz">Niko Lazaris</a>.</h3>
+    </div>
+  </section>
 
-    <script src="http://localhost:4000/mlh-hackathon-boilerplate/js/jquery-1.11.3.js"></script>
+  <script src="http://localhost:4000/js/jquery-1.11.3.js"></script>
 
-    
+  
   <!-- Google Analytics code -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -88,10 +113,11 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-43729070-14', 'auto');
+    ga('create', 'UA-92880122-2', 'auto');
     ga('send', 'pageview');
 
   </script>
 
-  </body>
+</body>
+
 </html>

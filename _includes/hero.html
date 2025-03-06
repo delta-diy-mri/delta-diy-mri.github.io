@@ -1,17 +1,70 @@
 <section class="hero">
   <div class="wrapper text-center">
-    <h1 rel="title">{{ site.event.name }}</h1>
-    <h2 rel="description">{{ site.event.description }}</h2>
-    <h3 rel="location">{{ site.event.date }} &mdash; {{ site.event.location }}</h3>
-    <hr>
-    <div class="buttons">
-      {% for link in site.event.hero.links %}
-        {% if link.href %}
-          <a href="{{ link.href }}">{{ link.text }}</a>
-        {% elsif link.my_mlh %}
-          <a class="apply" href="https://my.mlh.io/oauth/authorize?client_id={{ link.my_mlh.client_id }}&amp;redirect_uri={{ link.my_mlh.redirect_uri }}&amp;response_type=token">{{ link.text }}</a>
-        {% endif %}
-      {% endfor %}
+    <img class="logo" src="{{ site.event.logosrc }}" alt="{{ site.event.logoalt }}"/>
+    <div class="black-bg">
+      <h1 rel="title">{{ site.event.name }}</h1>
+      <h2 rel="description">{{ site.event.description }}</h2>
+      <h2 style="font-weight: 600;" rel="location"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;{{ site.event.date }}</h2>
+      <h2 style="font-weight: 600;" rel="location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>&nbsp;{{ site.event.location }}</h2>
+      <div class="social-icons">
+        {% for soc in site.event.social %}
+        <a href="{{ soc.link }}">
+          <img src="{{ soc.logo }}" alt="{{ soc.text }}">
+        </a>
+        {% endfor %}
+      </div>
+      <br />
     </div>
+  </div>
+  <div id="startchange" class="container about">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+      {{ site.event.about.description | markdownify }}
+    </div>
+  </div>
+  <div id="signupModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Eventbrite Registration</h4>
+        </div>
+        <div class="modal-body">
+          <div id="eventbrite-widget-container-43719602508"></div>
+          <div class="hidden-until-eb-complete alert alert-info" roler="alert">
+            <p>Would you like to also register a MyMLH account?</p>
+            <p>
+              <a class="alert-link" id="mymlh-button" href="https://my.mlh.io/oauth/authorize?client_id={{ site.event.hero.my_mlh.client_id }}&amp;redirect_uri={{ site.event.hero.my_mlh.redirect_uri }}&amp;response_type=token">Yes</a> &nbsp;or&nbsp;
+              <a class="alert-link" id="mymlh-button" href="{{ '/success' | prepend: site.baseurl | prepend: site.url }}">No</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="#signupModal" data-toggle="modal">Sign-up</a>
+
+    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+      var exampleCallback = function() {
+        console.log('Order complete!');
+      };
+
+      window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '43719602508',
+        iframeContainerId: 'eventbrite-widget-container-43719602508',
+
+        // Optional
+        iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback // Method called when an order has successfully completed
+      });
+    </script>
+
+    {% for link in site.event.hero.links %}
+    <a href="{{ link.href }}">{{ link.text }}</a> {% endfor %}
+
   </div>
 </section>
