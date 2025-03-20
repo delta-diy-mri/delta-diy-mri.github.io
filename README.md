@@ -36,7 +36,9 @@ Each repository should list corresponding conference proceeding or journal artic
  2. [Virtual Scanner](https://github.com/imr-framework/virtual-scanner/)
 
 ## Our image ....
-<img src="https://github.com/user-attachments/assets/74e45643-1f8c-4983-9a25-5458d2f17aa5" width="200">
+<img src="https://github.com/user-attachments/assets/423c93c2-c405-448e-8fd6-d84fc44a69a9" width="200">
+
+
 
 
 
