@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/8097b392-6293-45f1-9f9c-28c3ca6d7f63">
+  <img src="https://github.com/user-attachments/assets/d8a7c6e1-9337-4a7d-88c9-b72ed52cbec9" width="200">
 </div>
+
 
 
 # DELTA DIY MRI: Practical magnetic resonance imaging for all
