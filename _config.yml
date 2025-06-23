@@ -25,6 +25,7 @@ social:
   twitter_handle:    "DIY_MRI"
   facebook_page:     "https://www.facebook.com/diy.mri"
   github_org:        "delta-diy-mri"
+  LinkedIn:          "https://www.linkedin.com/groups/14663170/"
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
@@ -39,17 +40,19 @@ organiser:
 
 # Event information.
 event:
-  name:              "CreatED 2018"
-  name_short:        "CreatED"
-  description:       "24-hour hardware hackathon"
-  date:              "7th & 8th of April"
-  location:          "Appleton Tower, The University of Edinburgh"
-  logosrc:           "images/logo.png"
-  logoalt:           "CreatED Logo"
+  name:              "DIY MRI workshop"
+  name_short:        "DIY MRI"
+  description:       "Three day workshop to learn, build and scan on a low-field MRI from scratch"
+  start_date:        "2026-09-16"
+  end_date:          "2026-09-18"
+  date:              "16-18 September 2026"
+  location:          "Johns Hopkins University, Baltimore, Maryland, USA"
+  logosrc:           "images/diy-mri-logo.png"
+  logoalt:           "DIY-MRI Logo"
 
   trust_badge:
-    year:            "2018"  # season year
-    region:          "eu"    # "na" or "eu"
+    year:            "2026"  # season year
+    region:          "na"    # "na" or "eu"
     color:           "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   social:
@@ -64,177 +67,158 @@ event:
     my_mlh:
       text:          "Register with MyMlh, too"
       client_id:     "87fceece377ceb70f339e440591e889e918c1d421bd986ff7b58ca3ea9ee1d30"
-      redirect_uri:  "https://createdhack.github.io/success"
+      redirect_uri:  "delta-diy-mri.github.io"
 
-    links:
-      - text:        "Sponsor"
-        href:        "mailto:cameron@ears-edi.com"
+    # links:
+    #   - text:        "Sponsor"
+    #     href:        "mailto:sairam.geethanath@jhu.edu"
 
   about:
     description:     >
-      CreatED is a 24 hour hardware hackathon coming to Edinburgh this April.{::nomarkdown}<br />{:/}
-      It'll bring together students for a fun weekend of invention, hacking, and learning.{::nomarkdown}<br />{:/}
-      Brought to you by [The University of Edinburgh Embedded and Robotics Society](http://ears-edi.com/).
+      DIY-MRI is a three day workshop at Johns Hopkins University in September.{::nomarkdown}<br />{:/}
+      It'll bring together participants for a fun three days of learning, building and scanning.{::nomarkdown}<br />{:/}
 
   workshops:
-      - name: "Introduction to Electronics"
+      - name: "Introduction to 3D printing"
         time: "12.00 - 13.00"
         level: "No prior experience required."
-        description: "Do you want to learn the basics of building circuits? We will take you over the fundamentals of electronics concepts, explain how components such as resistors or transistors work and finally get you to build some circuits of your own!"
-      - name: "MiRo"
-        time: "12.00 - 13.00"
-        level: "Knowledge of programming and command line"
-        description: "Are you interested in working on a MiRo project during the hackathon? Come to this workshop which will give an introduction to MiRo, all of his sensors/actuators and explain the basics of how it works. You will learn how to use the simulator to introduce the basics of programming MiRos with ROS, and finally show how to port the programmed behaviours over to the real robot"
-      - name: "Introduction to micro:bit"
-        time: "14.00 - 15.00"
-        level: "Entry level, no prior experience required. If you have never programmed before it would be very beneficial for you to come."
-        description: "A workshop aimed at people with no previous programming experience. We will take you from complete basics to explain the fundamental concepts of programming and then show you how to apply them to hardware by making a simple game on a Microbit"
-      - name: "GitHub workshop"
+        description: "Do you want to learn the basics of CAD designing and printing? We got your covered  -- to design and print your first 3D figurine!"
+      - name: "GitHub fundamentals"
         time: "15.00 - 16.00"
         level: "Entry level, no prior experience required."
-        description: "During this workshop delivered to you by GitHub you will learn the basics of version control. We will take you from the basics of Git all the way through to showcasing your projects on GitHub."
-      - name: "Line Follower"
-        time: "15.30 - 17.00"
-        level: "Basic knowledge of electronics, Arduino and programming programming"
-        description: "Build your own line follower robot using an Arduino. We will take you through the basics of motor control and sensor readings so that you can build your own line following robot and watch it go!"
-
-      - name: "Introduction to FPGA"
-        time: "17.00 - 18.00"
-        level: "Knowledge of Python strongly recommended"
-        description: "A beginner's intro to the world of FPGA programming! Come along to learn how to set up a PYNQ FPGA board and test out several simple projects in Jupyter Notebook"
-      - name: "Introduction to IoT"
-        time: "19.00 - 20.00"
-        level: "Basic knowledge of Python recommended."
-        description: "During this workshop we will dive into the world of IoT technologies. We will explain how the IoT systems work and take you through creating you own simple IoT application"
-
-  # Info Sections
-  sponsors:
+        description: "We will help you get started with creating your profile, creating a repository and pushing code to your GitHub repository."
+      
+  # Info Sections - will use this section for speakers and mentors
+  principals:
     # tier1 is top, anycont is bottom (refer to sponsorship packages)
-    tier2:
-      - logo:        "images/accenture_logo.png"
-        name:        "Accenture"
-        url:         "http://www.accenture.com"
-      - logo:        "images/nordic_logo.png"
-        name:        "Nordic"
-        url:         "http://www.nordicsemi.com/"
-      - logo:        "images/github_logo.png"
-        name:        "GitHub"
-        url:         "https://github.com"
-      - logo:        "images/queryclick_logo.svg"
-        name:        "QueryClick"
-        url:         "http://uk.queryclick.com/en/"
-      - logo:        "images/ecr_logo.jpg"
-        name:        "ECR"
-        url:         "https://www.edinburgh-robotics.org/"
-      - logo:        "images/consequentialrobotics_logo.png"
-        name:        "Consequential Robotics"
-        url:         "http://consequentialrobotics.com"
+    speakers:
+      - image:       "images/ZB.png"
+        name:        "Dr. Zaver Bhujwalla"
+        url:         "https://profiles.hopkinsmedicine.org/provider/zaver-m-bhujwalla/2777914"
+
+      - image:       "images/PVZ.png"
+        name:        "Dr. Peter Van Zijl"
+        url:         "https://www.kennedykrieger.org/patient-care/faculty-staff/peter-van-zijl"
+
+      - image:       "images/JTV.png" 
+        name:        "Dr. Thomas Vaughan Jr."
+        url:         "https://www.engineering.columbia.edu/faculty-staff/directory/j-thomas-tommy-vaughan-jr"
+
+      - image:        "images/MM.png"
+        name:        "Dr. Michael McMahon"
+        url:         "https://profiles.hopkinsmedicine.org/provider/michael-t-mc-mahon/2777458"    
+
+      - image:       "images/TC.png"
+        name:        "Dr. Todd Constable"
+        url:         "https://medicine.yale.edu/profile/todd-constable/" 
+
+      - image:       "images/HL.png"
+        name:        "Dr. Hanzhang Lu"
+        url:         "https://profiles.hopkinsmedicine.org/provider/hanzhang-lu/2777482"
+
+      - image:       "images/AW.png"
+        name:        "Dr. Andrew Webb"
+        url:         "https://www.universiteitleiden.nl/en/staffmembers/andrew-webb#tab-1"
+
+      - image:       "images/PB.png"
+        name:        "Dr. Peter Barker"
+        url:         "https://profiles.hopkinsmedicine.org/provider/peter-b-barker/2777516"  
+
+    leaders:
+      - image:       "images/IEO.png"
+        team:        "Magnet"
+        name:        "Mr. Ivan Etoku Oiye"
+        url:         "https://scholar.google.com/citations?user=A7HuxwcAAAAJ&hl=en&oi=ao"
+
+      - image:       "images/CS.png"
+        team:        "RF coils"
+        name:        "Dr. Charlotte Sappo"
+        url:         "https://scholar.google.com/citations?hl=en&user=ND6nPMAAAAAJ"
+
+      - image:       "images/ST.png"
+        team:        "Gradient coils"
+        name:        "Dr. Sebastian Theilenberg"
+        url:         "https://scholar.google.com/citations?hl=en&user=6KAS88gAAAAJ"
+
+      - image:       "images/SG.png"
+        team:        "Data acquisition"
+        name:        "Dr. Sairam Geethanath"
+        url:         "https://profiles.hopkinsmedicine.org/provider/sairam-geethanath/2777486"
+
+      - image:       "images/AS.png"
+        team:        "Reconstruction"
+        name:        "Dr. Ajay Sharma"
+        url:         "https://scholar.google.com/citations?hl=en&user=rojRnpEAAAAJ"
+
+      - image:       "images/DSS.png" 
+        team:        "Reconstruction"
+        name:        "Dr. Sasi Dinil Sankaralayam"
+        url:         "https://scholar.google.com/citations?hl=en&user=84pWKyEAAAAJ"
+
+      - image:       "images/JB.png"
+        team:        "Console software"
+        name:        "Dr. Jonathan Martin"
+        url:         "https://scholar.google.com/citations?hl=en&user=HSuqP_MAAAAJ"
+
+      - image:       "images/ZM.png"
+        team:        "System Phantom"
+        name:        "Dr. Zinia Mohanta"
+        url:         "https://scholar.google.com/citations?hl=en&user=zmXHDTMAAAAJ"
+
+
+
     tier3:
       - logo:        "images/codethink_logo.svg"
         name:        "Codethink"
         url:         "https://www.codethink.co.uk/"
-      - logo:        "images/mokanix_logo_small.png"
-        name:        "mokanix"
-        url:         "https://www.mokanix.io"
-      - logo:        "images/fdm_logo.png"
-        name:        "FDM Group"
-        url:         "https://www.fdmgroup.com/"
-      - logo:        "images/compsoc_logo.png"
-        name:        "Compsoc"
-        customstyle: "padding-top: 20%; margin-bottom: 10%;"
-        url:         "https://comp-soc.com/"
-      - logo:        "images/morgain_stanley_logo.svg"
-        name:        "Morgan Stanley"
-        url:         "https://www.morganstanley.com/"
-        customstyle: "padding-top: 2%;"
-      - logo:        "images/sicsa_logo.svg"
-        name:        "SISCA"
-        url:         "http://www.sicsa.ac.uk/"
+     
     anycont:
       - logo:        "images/InformaticsUni_transparent.gif"
         name:        "University of Edinburgh School of Informatics"
         url:         "http://www.ed.ac.uk/informatics"
-      - logo:        "images/xilinx_logo.png"
-        name:        "Xilinx"
-        url:         "http://www.xilinx.com"
-      - logo:        "images/mouser_logo.jpg"
-        name:        "Mouser"
-        url:         "http://mouser.com/"
-      - logo:        "images/jetbrains_logo.png"
-        name:        "JetBrains"
-        url:         "https://www.jetbrains.com/"
-      - logo:        "images/unity_logo.png"
-        name:        "Unity"
-        url:         "http://unity3d.com/"
-      - logo:        "images/lime_logo.png"
-        name:        "Lime Microsystems"
-        url:         "http://www.limemicro.com/"
-      - logo:        "images/twilio_logo.svg"
-        name:        "Twilio"
-        url:         "https://www.twilio.com"
+     
 
   info:
     sections:
       - image:       "images/header1.png"
         imagealt:    "Circuitry on a breadboard"
-        title:       "Hardware"
+        title:       "Learn"
         description: >
          We are the only student-run hackathon in the UK with a focus on hardware! Hackers will be producing physical devices, not just software projects.
       - image:       "images/header2.png"
         imagealt:    "Mentor assiting workshop attendees"
-        title:       "Workshops"
+        title:       "Build"
         description: >
          We will also be running an exciting series of workshops in parallel to the main event. The list will be announced soon&trade; and you'll be able to sign up on the day. Watch this space!
       - image:       "images/header3.png"
         imagealt:    "Two mentors discussing information on a computer"
-        title:       "Mentors"
+        title:       "Scan"
         description: >
           We have a team of elite mentors available on site. They will be there to guide you all throughout the event whether you are a beginner or a seasoned hacker!
 
   # Frequently asked questions.
   faq:
-    - question:      "What is a hackathon?"
-      answer:        >
-        A hackathon is an invention marathon. Students come together to build cool
-        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
     - question:      "How much does it cost?"
       answer:        >
-        Nothing. Attending a hackathon is free.
+        Nothing. Attending this workshop is free.
     - question:      "Do I need to be a student to attend?"
       answer:        >
         No. Anyone over the age of 18 can attend.
     - question:      "I'm a complete beginner. Can I still come?"
       answer:        >
-        Absolutely! We especially encourage people that are new in the field to come along as a hackathon is a great place to get started. [Drop us a message](mailto:cameron@ears-edi.com) if you have any concerns.
+        Absolutely! We especially encourage people that are new in the field to come along as this workshop is a great place to get started. [Drop us a message](mailto:sairamgeethanath@gmail.com) if you have any concerns.
     - question:      "Where is the event?"
       answer:        >
-        The event is being hosted at [Appleton Tower, The University of Edinburgh](https://www.google.co.uk/maps/place/Appleton+Tower,+The+University+of+Edinburgh/@55.9443771,-3.1891978,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78385c7685d:0x6f9d3da4d39209ee!8m2!3d55.9443771!4d-3.1870091?dcr=0).
-    - question:      "What hardware will be available to use?"
-      answer:        >
-        You'll get access to a selection of standard components, microcontrollers and sensors.
-        For more detail, check out our [equipment list](https://docs.google.com/spreadsheets/d/1eLp_IJti27BO-0y5Q0DZIzqE3m4JAhHwhD6LHUlhDWw/edit#gid=0 "CreatED available equipment spreadsheet"). If there is
-        anything specific that you really want to use, you are welcome to bring it along!
-    - question:      "How big are the teams?"
-      answer:        >
-        Teams are no bigger than 4 people.
+        The event is being hosted at [Johns Hopkins University School of Medicine](https://maps.app.goo.gl/XTnVxt5uJx6UEYAY6).
     - question:      "Do you offer travel reimbursement?"
       answer:        >
-        We cannot reimburse you for your travel expenses.
+        Based on available funding, we expect to fund approximately 6 (graduate or doctoral) students.
     - question:      "Is there a code of conduct?"
       answer:        >
         We will be using the MLH code of conduct and will be enforcing it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
-    - question:      "How does judging work?"
-      answer:        >
-        There will be 3 main winning teams that will be selected by a panel of judges.
-        The judges will score hacks in a number of categories announced at the event.
-        There will also be additional prizes for winners of specific challenges at the event. These challenges will
-        involve meeting certain criteria specific to each one.
-    - question:      "Do I have to use hardware in my hack?"
-      answer:        >
-        Yes, although don't be scared if you've never used hardware before! We'll have a team of elite mentors on site that will be helping you every step of the way. There will also be introductory workshops for beginners. Your hack will probably also include a software component.
     - question:      "Do I have to come with teammates?"
       answer:        >
-        There is a team-forming session at the start of the first day so feel free to come along on your own or with friends.
+        Team-forming sessions are being organized by the team mentors and will be ready before the workshop. Please feel free to participate to let them know your preferences.
 
   schedule:
     Saturday:
