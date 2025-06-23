@@ -30,12 +30,12 @@ social:
 seo:
   title:             "DIY-MRI | 16-18 September 2026"
   description:       "3-day workshop to learn, build and scan on a low-field MRI from sratch"
-  image:             "https://createdhack.github.io/images/logo.png"
+  image:             "https://github.com/delta-diy-mri/delta-diy-mri.github.io/blob/main/images/DELTA%20LOGO_black%20background.tif"
 
 organiser:
-  name:              "EaRS"
-  full_name:         "The University of Edinburgh Embedded and Robotics Society"
-  site:              "http://ears-edi.com/"
+  name:              "LAMRI"
+  full_name:         "Geethanath Laboratory for Accessible MRI, Johns Hopkins University"
+  site:              "https://imr-framework.github.io/"
 
 # Event information.
 event:
