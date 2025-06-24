@@ -56,12 +56,18 @@ event:
     color:           "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   social:
-    - logo:          "images/fb_logo.png"
-      text:          "Facebook event"
-      link:          "https://www.facebook.com/events/328878124288949/"
-    - logo:          "images/twitter_logo.png"
-      text:          "Twitter"
-      link:          "https://twitter.com/CreatEDHack"
+    # - logo:          "images/fb_logo.png"
+    #   text:          "Facebook event"
+    #   link:          "https://www.facebook.com/events/"
+    # - logo:          "images/twitter_logo.png"
+    #   text:          "Twitter"
+    #   link:          "https://x.com/SG_MRI4all"
+    # - logo:          "images/twitter_logo.png"
+    #   text:          "Instagram"
+    #   link:          "https://x.com/SG_MRI4all"
+    - logo:          "images/Linkedin_logo.png"
+      text:          "Linkedin"
+      link:          "https://www.linkedin.com/groups/14663170/"
 
   hero:
     my_mlh:
@@ -76,15 +82,15 @@ event:
   about:
     description:     >
       DIY-MRI is a three day workshop at Johns Hopkins University in September.{::nomarkdown}<br />{:/}
-      It'll bring together participants for a fun three days of learning, building and scanning.{::nomarkdown}<br />{:/}
+      It'll bring together participants for fun-filled three days of learning, building and scanning.{::nomarkdown}<br />{:/}
 
   workshops:
       - name: "Introduction to 3D printing"
-        time: "12.00 - 13.00"
+        time: "16th September, 12.00 - 13.00"
         level: "No prior experience required."
         description: "Do you want to learn the basics of CAD designing and printing? We got your covered  -- to design and print your first 3D figurine!"
       - name: "GitHub fundamentals"
-        time: "15.00 - 16.00"
+        time: "16th September, 12.00 - 13.00"
         level: "Entry level, no prior experience required."
         description: "We will help you get started with creating your profile, creating a repository and pushing code to your GitHub repository."
       
@@ -180,22 +186,21 @@ event:
 
   info:
     sections:
-      - image:       "images/header1.png"
+      - image:       "images/learn.png"
         imagealt:    "Circuitry on a breadboard"
         title:       "Learn"
         description: >
-         We are the only student-run hackathon in the UK with a focus on hardware! Hackers will be producing physical devices, not just software projects.
-      - image:       "images/header2.png"
+         Come, learn from luminaries in the field and work closely with mentors with practical experience building system components. If you are a beginner, this is a great opportunity to sign up for our quick starter sessions and learn from some of the best in the field.
+      - image:       "images/build.png"
         imagealt:    "Mentor assiting workshop attendees"
         title:       "Build"
         description: >
-         We will also be running an exciting series of workshops in parallel to the main event. The list will be announced soon&trade; and you'll be able to sign up on the day. Watch this space!
-      - image:       "images/header3.png"
+          We will be building a low-field MRI scanner from scratch. You will be working in teams to build the magnet, RF coils, gradient coils, data acquisition and reconstruction components of the system. Come, experience the thrill of building a real MRI scanner with your own hands!
+      - image:       "images/scan.png"
         imagealt:    "Two mentors discussing information on a computer"
         title:       "Scan"
         description: >
-          We have a team of elite mentors available on site. They will be there to guide you all throughout the event whether you are a beginner or a seasoned hacker!
-
+          We will be scanning with the MRI scanner that you built! You will be able to scan a phantom and see the results of your hard work. This is a unique opportunity to see how the components you built come together to form a complete MRI system and produce images.
   # Frequently asked questions.
   faq:
     - question:      "How much does it cost?"
@@ -203,7 +208,7 @@ event:
         Nothing. Attending this workshop is free.
     - question:      "Do I need to be a student to attend?"
       answer:        >
-        No. Anyone over the age of 18 can attend.
+        No. Anyone over the age of 18 with an interest in or experiene with MRI can attend.
     - question:      "I'm a complete beginner. Can I still come?"
       answer:        >
         Absolutely! We especially encourage people that are new in the field to come along as this workshop is a great place to get started. [Drop us a message](mailto:sairamgeethanath@gmail.com) if you have any concerns.

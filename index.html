@@ -3,14 +3,14 @@ layout: default
 ---
 {% include hero.html %}
 
-<section class="hardwarehack">
+<section id="about" class="faq">
   <div class="container">
     <h1 class="text-center">What makes DIY-MRI special?</h1>
     <div class="items row">
       {% for section in site.event.info.sections %}
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
-            <img class="special-image" src="{{ section.image }}" alt="{{ section.imagealt }}" />
+            <img class="special-image" src="{{ section.image }}" height = 200 alt="{{ section.imagealt }}" />
             <h1>{{ section.title }}</h1>
             <hr>
             <h2 class="special-image-desc">{{ section.description }}</h2>
@@ -53,7 +53,7 @@ layout: default
         <div class="col-sm-9">
           <table class="table table-hover">
             <tbody>
-              <tr><th></th><th>Main track</th><th></th><th>Quick start sessions</th></tr>
+              <tr><th></th><th>Main track</th><th></th><th>Quick start sessions - optional</th></tr>
               {% for event in site.event.schedule.Saturday %} {% assign previous = forloop.index0 | minus: 1 %} {% assign next = forloop.index0 | plus: 1 %} {% if site.event.schedule.Saturday[previous].start != event.start %}
               <tr>
                 {% if event.track == "ws" %}
@@ -127,7 +127,7 @@ layout: default
 
 <section id="workshops" class="workshops">
   <div class="container">
-    <h1 class="text-center">Quick start sessions</h1>
+    <h1 class="text-center">Quick start sessions - optional</h1>
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
           {% for workshop in site.event.workshops %}
@@ -148,7 +148,7 @@ layout: default
 
 
 
-<section class="hardwarehack">
+<section id="speakers" class = workshops>
   <div class="container">
     <h1 class="text-center">Meet our speakers</h1>
     <div class="items row">
@@ -156,7 +156,7 @@ layout: default
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
             <h3>{{ speaker.name }}</h3>
-            <a href="{{ speaker.url }}"><img src="{{ speaker.image }}" height = 200 alt="{{ speaker.name }}"/></a>
+            <a href="{{ speaker.url }}"><img src="{{ speaker.image }}" height = 200 alt="{{ speaker.name }} "/></a>
           </div>
           <hr>
         </div>
@@ -165,7 +165,7 @@ layout: default
   </div>
 </section>
 
-<section class="hardwarehack">
+<section id="mentors" class = workshops>
   <div class="container">
     <h1 class="text-center">Meet our mentors</h1>
     <div class="items row">
@@ -183,6 +183,25 @@ layout: default
   </div>
 </section>
 
+<section id="past-workshop" class = workshops>
+  <h1 class="text-center">Past Events: 5th - 7th May 2025</h1>
+  <h3 class="text-center">Scroll to the right to see all pictures</h3>
+  <div class="image-gallery">
+  <img src="images/ws-highlights0.png" alt="Image 0">
+  <img src="images/ws-highlights1.png" alt="Image 1">
+  <img src="images/ws-highlights2.png" alt="Image 2">
+  <img src="images/ws-highlights3.png" alt="Image 3">
+  <img src="images/ws-highlights4.png" alt="Image 4">
+  <img src="images/ws-highlights5.png" alt="Image 5">
+  <img src="images/ws-highlights6.png" alt="Image 6">
+  <img src="images/ws-highlights7.png" alt="Image 7">
+  <img src="images/ws-highlights8.png" alt="Image 8">
+  <img src="images/ws-highlights9.png" alt="Image 9">
+  <img src="images/ws-highlights10.png" alt="Image 10">
+  <img src="images/ws-highlights11.png" alt="Image 11">
+  <img src="images/ws-highlights12.png" alt="Image 12">
+  </div>
+</section>
 
 
 <section id="venue" class="venue">

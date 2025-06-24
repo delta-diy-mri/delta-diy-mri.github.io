@@ -402,3 +402,15 @@ section.about p {
   text-align: center;
   padding: 3vw;
 }
+
+.image-gallery {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 10px; /* Add some padding around images */
+}
+
+.image-gallery img {
+  display: inline-block; /* Make images display in a line */
+  height: 500px; /* Set image height (adjust as needed) */
+  margin-right: 10px; /* Add spacing between images */
+}
