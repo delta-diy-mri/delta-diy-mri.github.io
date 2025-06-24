@@ -173,30 +173,30 @@ event:
 
 
 
-    tier3:
-      - logo:        "images/codethink_logo.svg"
-        name:        "Codethink"
-        url:         "https://www.codethink.co.uk/"
+    # tier3:
+    #   - logo:        "images/codethink_logo.svg"
+    #     name:        "Codethink"
+    #     url:         "https://www.codethink.co.uk/"
      
-    anycont:
-      - logo:        "images/InformaticsUni_transparent.gif"
-        name:        "University of Edinburgh School of Informatics"
-        url:         "http://www.ed.ac.uk/informatics"
+    # anycont:
+    #   - logo:        "images/InformaticsUni_transparent.gif"
+    #     name:        "University of Edinburgh School of Informatics"
+    #     url:         "http://www.ed.ac.uk/informatics"
      
 
   info:
     sections:
-      - image:       "images/learn.png"
+      - image:       "images/ws_learn.png"
         imagealt:    "Learning during workshop"
         title:       "Learn"
         description: >
          Come, learn from luminaries in the field and work closely with mentors with practical experience building system components. If you are a beginner, this is a great opportunity to sign up for our quick starter sessions and learn from some of the best in the field.
-      - image:       "images/build.png"
+      - image:       "images/ws_build.png"
         imagealt:    "Building during workshop"
         title:       "Build"
         description: >
           We will be building a low-field MRI scanner from scratch. You will be working in teams to build the magnet, RF coils, gradient coils, data acquisition and reconstruction components of the system. Come, experience the thrill of building a real MRI scanner with your own hands!
-      - image:       "images/scan.png"
+      - image:       "images/ws_scan.png"
         imagealt:    "Get-together after scanning"
         title:       "Scan"
         description: >
