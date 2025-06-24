@@ -38,7 +38,8 @@ layout: default
   </div>
 </section>
 
-<section id="schedule" class="workshops"></section>
+<section id="schedule" class="faq"></section>
+ <h1 style="text-align:center; color:white;">Schedule</h1>
   <div style="width:100%; max-width: 1000px; margin-left: auto; margin-right: auto; background-color: white;">
     <iframe src="https://livejohnshopkins-my.sharepoint.com/personal/sgeetha1_jh_edu/_layouts/15/Doc.aspx?sourcedoc={fd381b5d-c467-47b5-9dd0-320e353ef45a}&amp;action=embedview" width="1000px" height="1200px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
   </div>
@@ -162,7 +163,7 @@ layout: default
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
             <h3>{{ speaker.name }}</h3>
-            <a href="{{ speaker.url }}"><img src="{{ speaker.image }}" height = 200 alt="{{ speaker.name }} "/></a>
+            <a target="_blank" href="{{ speaker.url }}"><img src="{{ speaker.image }}" height = 200 alt="{{ speaker.name }} "/></a>
           </div>
           <hr>
         </div>
@@ -179,7 +180,7 @@ layout: default
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
             <h2>{{ leader.team }}</h2>
-            <a href="{{ leader.url }}"><img src="{{ leader.image }}" height = 200 alt="{{ leader.name }}"/></a>
+            <a target="_blank" href="{{ leader.url }}"><img src="{{ leader.image }}" height = 200 alt="{{ leader.name }}"/></a>
             <h3>{{ leader.name}}</h3>
           </div>
           <hr>

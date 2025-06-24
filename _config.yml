@@ -224,7 +224,15 @@ event:
     - question:      "Do I have to come with teammates?"
       answer:        >
         Team-forming sessions are being organized by the team mentors and will be ready before the workshop. Please feel free to participate to let them know your preferences.
-
+    - question:      "What if I have more questions?"
+      answer:        >
+        Please feel free to reach out to us on our [LinkedIn page](https://www.linkedin.com/groups/14663170/).
+    - question:      "Are there resources for me to get started before the workshop?"
+      answer:        >
+        Please refer to our [Wikis](https://github.com/delta-diy-mri/delta-diy-mri.github.io/wiki) and [readme](https://github.com/delta-diy-mri/delta-diy-mri.github.io/blob/main/README.md)
+  
+  
+  
   schedule:
     Saturday:
       - text:        "Start of registration"
