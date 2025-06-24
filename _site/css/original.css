@@ -411,6 +411,6 @@ section.about p {
 
 .image-gallery img {
   display: inline-block; /* Make images display in a line */
-  height: 500px; /* Set image height (adjust as needed) */
+  height: 600px; /* Set image height (adjust as needed) */
   margin-right: 10px; /* Add spacing between images */
 }
