@@ -81,7 +81,7 @@ event:
 
   about:
     description:     >
-      DIY-MRI is a three day workshop at Johns Hopkins University in September.{::nomarkdown}<br />{:/}
+      DIY-MRI is a three day workshop at Johns Hopkins University in September, 2026.{::nomarkdown}<br />{:/}
       It'll bring together participants for fun-filled three days of learning, building and scanning.{::nomarkdown}<br />{:/}
 
   workshops:
@@ -190,7 +190,7 @@ event:
         imagealt:    "Learning during workshop"
         title:       "Learn"
         description: >
-         Come, learn from experts in the field and work closely with mentors who have built and assembled low-field scanners. If you are a beginner, this is a great opportunity to sign up for our quick starter sessions and learn from some of the best in the field.
+         Come, learn from experts in the field and work closely with mentors who have designed, built and assembled low-field scanners. If you are a beginner, this is a great opportunity to sign up for our quick starter sessions and learn from some of the best in the field.
       - image:       "images/ws_build.png"
         imagealt:    "Building during workshop"
         title:       "Build"
@@ -200,7 +200,7 @@ event:
         imagealt:    "Get-together after scanning"
         title:       "Scan"
         description: >
-          We will be scanning with the MRI scanner that you built! You will be able to scan a phantom and see the results of your hard work. This is a unique opportunity to see how the components you built come together to form a complete MRI system and produce images.
+          We will be imaging with the MR scanner that you built! You will be able to scan a phantom and see the results of your hard work. This is a unique opportunity to see how the components you built come together to form a complete MRI system and produce images.
   # Frequently asked questions.
   faq:
     - question:      "How much does it cost?"
@@ -230,6 +230,9 @@ event:
     - question:      "Are there resources for me to get started before the workshop?"
       answer:        >
         Please refer to our [Wikis](https://github.com/delta-diy-mri/delta-diy-mri.github.io/wiki) and [readme](https://github.com/delta-diy-mri/delta-diy-mri.github.io/blob/main/README.md)
+    - question:      "Do you have housing options or suggestions?"
+      answer:        >
+        We are working on listing some housing options for you. Please check back later.
   
   
   
