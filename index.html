@@ -219,6 +219,24 @@ layout: default
 </section>
 
 
+<section id="sponsors" class = workshops>
+  <div class="container">
+    <h1 class="text-center">Our sponsors</h1>
+    <div class="items row">
+      {% for sponsor in site.event.principals.sponsors %}
+        <div class="col-xs-12 col-sm-4 text-center">
+          <div class="item">
+            <h2>{{ sponsor.name }}</h2>
+            <a target="_blank" href="{{ sponsor.url }}"><img src="{{ sponsor.image }}" height = 200 width = 400 alt="{{ sponsor.name }}"/></a>
+          </div>
+          <hr>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
 <section id="venue" class="venue">
   <h1 class="text-center">Venue Details</h1>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6175.032840021992!2d-76.60239212229006!3d39.2992161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c804df05b6e5ad%3A0xd1588de19e842384!2sThe%20Johns%20Hopkins%20University%20School%20of%20Medicine!5e0!3m2!1sen!2sus!4v1750689761847!5m2!1sen!2sus" width="3000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

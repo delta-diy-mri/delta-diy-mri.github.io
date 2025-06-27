@@ -171,6 +171,21 @@ event:
         name:        "Dr. Zinia Mohanta"
         url:         "https://scholar.google.com/citations?hl=en&user=zmXHDTMAAAAJ"
 
+    # sponsors:
+    sponsors:
+      - image:       "images/Medirays.png"
+        name:        "Medirays India Pvt. Ltd."
+        url:         "https://www.medirays.com/"
+
+      - image:       "images/Multiwave.png"
+        name:        "Multiwave Technologies AG"
+        url:         "https://multiwave.ch/"
+
+      # - image:       "images/Phenomx.png"
+      #   name:        "PhenomX Technologies"
+      #   url:         "https://www.phenomx.com/"
+
+        
 
 
     # tier3:
