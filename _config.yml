@@ -181,9 +181,9 @@ event:
         name:        "Multiwave Technologies AG"
         url:         "https://multiwave.ch/"
 
-      # - image:       "images/Phenomx.png"
-      #   name:        "PhenomX Technologies"
-      #   url:         "https://www.phenomx.com/"
+      - image:       "images/Phenomx.png"
+        name:        "PMX Inc."
+        url:         "https://www.pmxinc.ai"
 
         
 
