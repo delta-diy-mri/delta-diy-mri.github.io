@@ -42,7 +42,7 @@ organiser:
 event:
   name:              "DIY MRI workshop"
   name_short:        "DIY MRI"
-  description:       "Three day workshop to learn, build and scan on a low-field MRI from scratch"
+  description:       "Three day workshop to learn, design, build and scan on a low-field MRI from scratch"
   start_date:        "2026-09-16"
   end_date:          "2026-09-18"
   date:              "16-18 September 2026"
@@ -208,7 +208,7 @@ event:
          Come, learn from experts in the field and work closely with mentors who have designed, built and assembled low-field scanners. If you are a beginner, this is a great opportunity to sign up for our quick starter sessions and learn from some of the best in the field.
       - image:       "images/ws_build.png"
         imagealt:    "Building during workshop"
-        title:       "Build"
+        title:       "Design & Build"
         description: >
           We will be building a low-field MRI scanner from scratch. You will be working in teams to build the magnet, RF coils, gradient coils, data acquisition and reconstruction components of the system. Come, experience the thrill of building a real MRI scanner with your own hands!
       - image:       "images/ws_scan.png"
