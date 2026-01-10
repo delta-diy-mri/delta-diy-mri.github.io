@@ -86,10 +86,12 @@ event:
 
   workshops:
       - name: "Introduction to 3D printing"
+        mentors: Dr. Charlotte Sappo, Mr. Ivan Etoku Oiye
         time: "16th September, 12.00 - 13.00"
         level: "No prior experience required."
         description: "Do you want to learn the basics of CAD designing and printing? We got your covered  -- to design and print your first 3D figurine!"
       - name: "GitHub fundamentals"
+        mentors: Mr. Leo Kinyera, Dr. Jon Martin, Dr. Sairam Geethanath
         time: "16th September, 12.00 - 13.00"
         level: "Entry level, no prior experience required."
         description: "We will help you get started with creating your profile, creating a repository and pushing code to your GitHub repository."
