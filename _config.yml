@@ -83,6 +83,7 @@ event:
     description:     >
       DIY-MRI is a three day workshop at Johns Hopkins University in September, 2026.{::nomarkdown}<br />{:/}
       It'll bring together participants for fun-filled three days of learning, building and scanning.{::nomarkdown}<br />{:/}
+      Our code of conduct is available [here](https://github.com/delta-diy-mri/delta-diy-mri.github.io/blob/main/Delta_DIY_MRI_CODE_OF_CONDUCT.md). We want to create a safe and respectful space for everyone to learn and have fun. Please reach out to us if you have any concerns.
 
   workshops:
       - name: "Introduction to 3D printing"
