@@ -40,7 +40,7 @@ organiser:
 
 # Event information.
 event:
-  name:              "DIY MRI workshop"
+  name:              "DIY MRI workshop - II"
   name_short:        "DIY MRI"
   description:       "Three day workshop to learn, design, build and scan on a low-field MRI from scratch"
   start_date:        "2026-09-16"
