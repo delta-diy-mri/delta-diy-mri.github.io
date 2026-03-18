@@ -239,7 +239,7 @@ event:
         Based on available funding, we expect to fund approximately 6 (graduate or doctoral) students.
     - question:      "Is there a code of conduct?"
       answer:        >
-        We will be using the MLH code of conduct and will be enforcing it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+        We will be using our custom code of conduct as well as the Major League Hacking (MLH) code of conduct. We will be enforcing it very strongly. You can [find these here](https://github.com/delta-diy-mri/delta-diy-mri.github.io/blob/main/Delta_DIY_MRI_CODE_OF_CONDUCT.md) and [here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
     - question:      "Do I have to come with teammates?"
       answer:        >
         Team-forming sessions are being organized by the team mentors and will be ready before the workshop. Please feel free to participate to let them know your preferences.
