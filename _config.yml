@@ -81,17 +81,30 @@ event:
 
   about:
     description:  |
+      
       DIY-MRI is a three day workshop at Johns Hopkins University in September, 2026.{::nomarkdown}<br />{:/}
       It'll bring together participants for fun-filled three days of learning, building and scanning.{::nomarkdown}<br />{:/} 
       Our code of conduct is available [here](https://github.com/delta-diy-mri/delta-diy-mri.github.io/blob/main/Delta_DIY_MRI_CODE_OF_CONDUCT.md). We want to create a safe and respectful space for everyone to learn and have fun. Please reach out to us if you have any concerns. 
-      If you are interested in contributing, we'd love to have you! Please check out our [guidelines for contributing](https://github.com/delta-diy-mri/delta-diy-mri.github.io/blob/main/CONTRIBUTING.md).
+      If you are interested in contributing, we'd love to have you! Please check out our [guidelines for contributing](https://github.com/delta-diy-mri/delta-diy-mri.github.io/blob/main/CONTRIBUTING.md). {::nomarkdown}<br />{:/}
+      {::nomarkdown}<br />{:/}
+      {::nomarkdown}<br />{:/}
+      {::nomarkdown}<br />{:/}
 
-      We are sold out, but please join the WAITLIST! We will get back to you by July 1, 2026.
+      **Travel stipends:** We are happy to report that the workshop is now supported by an [R13 award](https://reporter.nih.gov/search/LpVPw5Hfm0CIoei-2uwi4w/project-details/11392607) from NIH/NIBIB and NIH/NINDS.
+      Based on this funding, we expect to fund approximately 10 participants (non-faculty) a sum of $400 each. 
+      We regret the delay in announcing the results of the travel stipend applications. 
+      We will communicate the results for these awards by July 8th, 2026. Please check this website for our winners!
+
+
+
+      We are sold out, but please join the WAITLIST! 
+
+      
 
 
   workshops:
       - name: "Introduction to 3D printing"
-        mentors: Dr. Charlotte Sappo, Mr. Ivan Etoku Oiye
+        mentors: Dr. Charlotte Sappo, Mr. Ivan Etoku Oiye, Ms. Orya Shusterman-Bachi
         time: "16th September, 12.00 - 13.00"
         level: "No prior experience required."
         description: "Do you want to learn the basics of CAD designing and printing? We got your covered  -- to design and print your first 3D figurine!"
@@ -172,6 +185,11 @@ event:
         team:        "Console software"
         name:        "Dr. Jonathan Martin"
         url:         "https://scholar.google.com/citations?hl=en&user=HSuqP_MAAAAJ"
+
+      - image:       "images/LK.png"
+        team:        "Console software"
+        name:        "Mr. Leo Kinyera"
+        url:         "https://scholar.google.com/citations?user=2bYjXS0AAAAJ&hl=en&oi=ao"
 
       - image:       "images/ZM.png"
         team:        "System phantom"
