@@ -90,17 +90,33 @@ event:
       {::nomarkdown}<br />{:/}
       {::nomarkdown}<br />{:/}
 
-      **Travel stipends:** We are happy to report that the workshop is now supported by an [R13 award](https://reporter.nih.gov/search/LpVPw5Hfm0CIoei-2uwi4w/project-details/11392607) from NIH/NIBIB and NIH/NINDS.
-      Based on this funding, we expect to fund approximately 10 participants (non-faculty) a sum of $400 each. 
-      We regret the delay in announcing the results of the travel stipend applications. 
-      We will communicate the results for these awards by July 8th, 2026. Please check this website for our winners!
-
-
-
       We are sold out, but please join the WAITLIST! 
 
       
 
+  travel_awards:
+    title: "2026 DELTA DIY MRI Travel Award Recipients"
+    intro: "We are delighted to announce the recipients of the 2026 DELTA DIY MRI Workshop Travel Awards."
+    award_amount: "$400"
+    support_label: "NIH/NIBIB and NIH/NINDS R13 award"
+    support_prefix: "Through support from our"
+    support_suffix: "ten participants have been selected to receive $400 each toward travel expenses for the workshop."
+    support_url: "https://reporter.nih.gov/search/LpVPw5Hfm0CIoei-2uwi4w/project-details/11392607"
+    selection_note: "The awardees were selected following review of their travel-support applications by members of the workshop organizing team."
+    welcome_note: "We look forward to welcoming them to Johns Hopkins University for three days of collaborative learning, designing, building, and scanning at the DELTA DIY MRI Workshop, September 16-18, 2026."
+    discussions_note: "Short introductions from the travel-award recipients will also be shared through our GitHub Discussions community."
+    closing: "Congratulations to all of our 2026 travel-award recipients!"
+    recipients:
+      - name: "Selin Kandemir"
+      - name: "Shounak Nandi"
+      - name: "Saar Drive"
+      - name: "Sam Rubin"
+      - name: "Jody Todd"
+      - name: "Ayebare Vicky"
+      - name: "Nuwe Bryant Nyero"
+      - name: "Samantha Condo"
+      - name: "Chavalchart Herabut"
+      - name: "Orya Shusterman-Bachi"
 
   workshops:
       - name: "Introduction to 3D printing"

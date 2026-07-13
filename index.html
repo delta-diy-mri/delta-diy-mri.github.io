@@ -21,6 +21,61 @@ layout: default
   </div>
 </section>
 
+<section id="travel-awards" class="travel-awards">
+  <div class="container">
+    <div class="travel-awards-header text-center">
+      <p class="travel-awards-kicker">Travel Awards</p>
+      <h1>{{ site.event.travel_awards.title }}</h1>
+      <p class="travel-awards-intro">{{ site.event.travel_awards.intro }}</p>
+    </div>
+
+    <div class="travel-awards-summary">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="award-stat">
+            <span class="award-stat-number">{{ site.event.travel_awards.recipients | size }}</span>
+            <span class="award-stat-label">Recipients</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="award-stat">
+            <span class="award-stat-number">{{ site.event.travel_awards.award_amount }}</span>
+            <span class="award-stat-label">Travel Support Each</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="award-stat">
+            <span class="award-stat-number">R13</span>
+            <span class="award-stat-label">NIH/NIBIB + NIH/NINDS</span>
+          </div>
+        </div>
+      </div>
+      <p>
+        {{ site.event.travel_awards.support_prefix }}
+        <a href="{{ site.event.travel_awards.support_url }}" target="_blank" rel="noopener noreferrer">
+          {{ site.event.travel_awards.support_label }}</a>,
+        {{ site.event.travel_awards.support_suffix }}
+      </p>
+    </div>
+
+    <div class="award-recipient-grid">
+      {% for recipient in site.event.travel_awards.recipients %}
+        <div class="award-recipient-card">
+          <div class="award-recipient-medal" aria-hidden="true">&#916;</div>
+          <h2>{{ recipient.name }}</h2>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="travel-awards-notes text-center">
+      <p>{{ site.event.travel_awards.selection_note }}</p>
+      <p>{{ site.event.travel_awards.welcome_note }}</p>
+      <p>{{ site.event.travel_awards.discussions_note }}</p>
+      <p class="travel-awards-closing">{{ site.event.travel_awards.closing }}</p>
+    </div>
+  </div>
+</section>
+
 <section id="faq" class="faq">
   <div class="container">
     <h1 class="text-center">FAQ</h1>
@@ -47,111 +102,54 @@ layout: default
 </section>
 
 
-<!-- <section id="schedule" class="schedule">
-  <h1 class="text-center">Schedule</h1>
-  <div class="container">
-    <div id="schedSaturday">
-      <div class="row">
-        <div class="col-sm-3">
-          <header>
-            <div>7</div>
-            <div>April</div>
-          </header>
-        </div>
-        <div class="col-sm-9">
-          <table class="table table-hover">
-            <tbody>
-              <tr><th></th><th>Main track</th><th></th><th>Quick start sessions - optional</th></tr>
-              {% for event in site.event.schedule.Saturday %} {% assign previous = forloop.index0 | minus: 1 %} {% assign next = forloop.index0 | plus: 1 %} {% if site.event.schedule.Saturday[previous].start != event.start %}
-              <tr>
-                {% if event.track == "ws" %}
-                <th></th>
-                <td></td>
-                {% endif %}
-                <th>
-                  {{ event.start }}{% if event.end %}<br />|<br />{{ event.end}}{% endif %}
-                </th>
-                <td>
-                  {{ event.text }}
-                </td>
-                {% if event.track == "main" %} {% if event.start == site.event.schedule.Saturday[next].start %}
-                <th>
-                  {{ site.event.schedule.Saturday[next].start }}{% if site.event.schedule.Saturday[next].end %}<br />|<br />{{ site.event.schedule.Saturday[next].end }}{% endif %}
-                </th>
-                <td>{{ site.event.schedule.Saturday[next].text }}</td>
-                {% else %}
-                <th></th>
-                <td></td>
-                {% endif %} {% endif %}
-              </tr>
-              {% endif %} {% endfor %}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <div id="schedSunday">
-      <div class="row">
-        <div class="col-sm-3">
-          <header>
-            <div>8</div>
-            <div>April</div>
-          </header>
-        </div>
-        <div class="col-sm-9">
-          <table class="table table-hover">
-            <tbody>
-              {% for event in site.event.schedule.Sunday %} {% assign previous = forloop.index0 | minus: 1 %} {% assign next = forloop.index0 | plus: 1 %} {% if site.event.schedule.Sunday[previous].start != event.start %}
-              <tr>
-                {% if event.track == "ws" %}
-                <th></th>
-                <td></td>
-                {% endif %}
-                <th>
-                  {{ event.start }}{% if event.end %}<br />|<br />{{ event.end}}{% endif %}
-                </th>
-                <td>
-                  {{ event.text }}
-                </td>
-                {% if event.track == "main" %} {% if event.start == site.event.schedule.Sunday[next].start %}
-                <th>
-                  {{ site.event.schedule.Sunday[next].start }}{% if site.event.schedule.Sunday[next].end %}<br />|<br />{{ site.event.schedule.Sunday[next].end }}{% endif %}
-                </th>
-                <td>{{ site.event.schedule.Sunday[next].text }}</td>
-                {% else %}
-                <th></th>
-                <td></td>
-                {% endif %} {% endif %}
-              </tr>
-              {% endif %} {% endfor %}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <section id="workshops" class="workshops">
   <div class="container">
     <h1 class="text-center">Quick start sessions - optional</h1>
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          {% for workshop in site.event.workshops %}
+          
           <div class="col-xs-12">
             <div class="item">
-              <h2 class="text-center">{{ workshop.name }}</h2>
+              <h2 class="text-center">Introduction to 3D printing</h2>
               <hr>
-              <p class="workshop-time"><b>Mentors:</b> {{ workshop.mentors }}</p>
-              <p class="workshop-time"><b>Time:</b> {{ workshop.time }}</p>
-              <p class="workshop-level"><b>Level:</b> {{ workshop.level }}</p>
-              <p class="workshop-description"><b>Description: </b>{{ workshop.description }}</p>
+              <p class="workshop-time"><b>Mentors:</b> Dr. Charlotte Sappo, Mr. Ivan Etoku Oiye, Ms. Orya Shusterman-Bachi</p>
+              <p class="workshop-time"><b>Time:</b> 16th September, 12.00 - 13.00</p>
+              <p class="workshop-level"><b>Level:</b> No prior experience required.</p>
+              <p class="workshop-description"><b>Description: </b>Do you want to learn the basics of CAD designing and printing? We got your covered  -- to design and print your first 3D figurine!</p>
             </div>
           </div>
-          {% endfor %}
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <h2 class="text-center">GitHub fundamentals</h2>
+              <hr>
+              <p class="workshop-time"><b>Mentors:</b> Mr. Leo Kinyera, Dr. Jon Martin, Dr. Sairam Geethanath</p>
+              <p class="workshop-time"><b>Time:</b> 16th September, 12.00 - 13.00</p>
+              <p class="workshop-level"><b>Level:</b> Entry level, no prior experience required.</p>
+              <p class="workshop-description"><b>Description: </b>We will help you get started with creating your profile, creating a repository and pushing code to your GitHub repository.</p>
+            </div>
+          </div>
+          
         </div>
     </div>
+  </div>
+</section>
+
+<section id="community" class="workshops">
+  <div class="container">
+    <h1 class="text-center">Join the DIY MRI Community</h1>
+    <p>
+      Ask questions, share build progress, post simulations and images, troubleshoot
+      hardware/software issues, and connect with the mentoring teams.
+    </p>
+    <p>
+      <a class="btn btn-primary"
+         href="https://github.com/delta-diy-mri/delta-diy-mri.github.io/discussions"
+         target="_blank"
+         rel="noopener noreferrer">
+        Open GitHub Discussions
+      </a>
+    </p>
   </div>
 </section>
 
@@ -242,4 +240,3 @@ layout: default
   <h1 class="text-center">Venue Details</h1>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6175.032840021992!2d-76.60239212229006!3d39.2992161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c804df05b6e5ad%3A0xd1588de19e842384!2sThe%20Johns%20Hopkins%20University%20School%20of%20Medicine!5e0!3m2!1sen!2sus!4v1750689761847!5m2!1sen!2sus" width="3000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
-

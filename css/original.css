@@ -9,7 +9,7 @@
 /*
  * Primary Blue: #44D5FF;
  * Dark Blue: #0F2C34;
- * Primary Pink: #FF7FA8;
+ * Primary Orange: #FF9F1C;
  */
 * {
   font-family: 'Open Sans';
@@ -313,6 +313,192 @@ section.about p {
   margin-top: 40px;
   width: 300px;
 }
+
+/*
+ * Travel Awards Section
+ */
+.travel-awards {
+  background: linear-gradient(180deg, #f8fbfd 0%, #eef7fb 100%);
+  color: #0F2C34;
+  padding: 70px 0;
+  position: relative;
+}
+
+.travel-awards-header {
+  margin: 0 auto 30px;
+  max-width: 900px;
+}
+
+.travel-awards-kicker {
+  color: #1f78b8;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.travel-awards h1 {
+  font-family: 'Montserrat';
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.travel-awards-intro {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.travel-awards-summary {
+  background: #fff;
+  border: 1px solid #d8e6ef;
+  border-radius: 8px;
+  box-shadow: 0 14px 35px rgba(15, 44, 52, 0.08);
+  margin: 32px auto 38px;
+  max-width: 980px;
+  padding: 24px 28px;
+}
+
+.award-stat {
+  border-right: 1px solid #d8e6ef;
+  margin-bottom: 18px;
+  min-height: 82px;
+  padding: 4px 18px;
+  text-align: center;
+}
+
+.travel-awards-summary .col-sm-4:last-child .award-stat {
+  border-right: 0;
+}
+
+.award-stat-number,
+.award-stat-label {
+  display: block;
+  font-family: 'Montserrat';
+}
+
+.award-stat-number {
+  color: #0F2C34;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.award-stat-label {
+  color: #3e5962;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.travel-awards-summary p {
+  border-top: 1px solid #d8e6ef;
+  clear: both;
+  font-family: 'Montserrat';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 8px 0 0;
+  padding-top: 18px;
+  text-align: center;
+}
+
+.travel-awards-summary a {
+  color: #225f9b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.travel-awards-summary a:focus,
+.travel-awards-summary a:hover {
+  color: #0F2C34;
+  text-decoration: underline;
+}
+
+.award-recipient-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0 auto 34px;
+  max-width: 1080px;
+}
+
+.award-recipient-card {
+  background: #fff;
+  border: 1px solid #d8e6ef;
+  border-top: 6px solid #44D5FF;
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(15, 44, 52, 0.08);
+  min-height: 150px;
+  padding: 22px 14px 18px;
+  text-align: center;
+}
+
+.award-recipient-card:nth-child(even) {
+  border-top-color: #FF9F1C;
+}
+
+.award-recipient-medal {
+  align-items: center;
+  background: #0F2C34;
+  border: 4px solid #44D5FF;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px #eef3f6;
+  color: #fff;
+  display: flex;
+  font-family: 'Montserrat';
+  font-size: 28px;
+  font-weight: 700;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0 auto 14px;
+  width: 48px;
+}
+
+.award-recipient-card:nth-child(even) .award-recipient-medal {
+  border-color: #FF9F1C;
+}
+
+.award-recipient-card h2 {
+  color: #146f9f;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.award-recipient-card:nth-child(even) h2 {
+  color: #c66c00;
+}
+
+.travel-awards-notes {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.travel-awards-notes p {
+  font-family: 'Montserrat';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65;
+  margin: 0 auto 14px;
+}
+
+.travel-awards-closing {
+  color: #0F2C34;
+  font-weight: 700 !important;
+}
 /*
  * Footer Section
  */
@@ -353,6 +539,44 @@ section.about p {
   .hero hr {
     border-top-width: 8px;
     top: -8px;
+  }
+
+  .travel-awards {
+    padding: 48px 0;
+  }
+
+  .travel-awards h1 {
+    font-size: 32px;
+  }
+
+  .travel-awards-summary {
+    padding: 22px 18px;
+  }
+
+  .award-stat {
+    border-bottom: 1px solid #d8e6ef;
+    border-right: 0;
+    margin-bottom: 12px;
+    padding-bottom: 18px;
+  }
+
+  .travel-awards-summary .col-sm-4:last-child .award-stat {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .award-recipient-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media(max-width: 480px) {
+  .award-recipient-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .award-recipient-card {
+    min-height: 120px;
   }
 }
 
