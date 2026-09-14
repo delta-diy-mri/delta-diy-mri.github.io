@@ -25,12 +25,11 @@ Each repository should list corresponding conference proceeding or journal artic
 4.  [Passive shimming including 3D STL file generation](https://github.com/imr-framework/passive_shimming)
 5.  [Amplifiers: Gradient, RF TX and RF RX - 3rd party - Larry Wald/Martinos/MGH](https://tabletop.martinos.org/index.php?title=Main_Page)
 6.  [Planar gradient coil design](https://github.com/imr-framework/planar_gradient_coil_design/tree/main)
-7.  RF coil: design and simulation
-8.  RF coil: construction
-9.  [Spectrometer - 3rd party - FLOCRA; part of console software download](https://github.com/vnegnev)
-10. [Pulse sequence design using Pypulseq](https://github.com/imr-framework/pypulseq)
-11. [Console software - community effort, using Sairam's fork ](https://github.com/sairamgeethanath/console)
-12. Scanner log and outputs
+7.  [RF coil: design and simulation] (https://github.com/csappo/coilbuilding) 
+8.  [Spectrometer - 3rd party - FLOCRA; part of console software download](https://github.com/vnegnev)
+9. [Pulse sequence design using Pypulseq](https://github.com/imr-framework/pypulseq)
+10. [Console software - community effort, using Sairam's fork ](https://github.com/sairamgeethanath/console)
+11. Scanner log and outputs
 
  **Playing: Repositories list** 
  1. [Virtual Scanner Tabletop Games](https://github.com/imr-framework/vs-tabletop/tree/delta-diy)
